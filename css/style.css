@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  background: #222222;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+
+h2 {
+  font-size: 42px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+/*Buttons*/
+.btn-submit {
+  color: #454545;
+  padding: 14px 0;
+}
+
+.container {
+  width: 1170px;
+  max-width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.home-section {
+  padding: 120px 0;
+  width: 100%;
+}
+.home-section .logo-section {
+  position: ralative;
+  display: block;
+  padding-bottom: 68px;
+}
+.home-section .logo-section .logo {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  position: relative;
+  padding-bottom: 14px;
+}
+.home-section .logo-section .logo:after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 1px;
+  bottom: 0px;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.home-section .coming-soon {
+  padding: 68px 0 30px 0;
+}
+.home-section .coming-soon h2 {
+  margin: 0;
+}
+.home-section .contacts {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+.home-section .contacts .contact {
+  display: inline-table;
+  margin-right: 40px;
+  padding: 35px 0 80px 0;
+}
+.home-section .contacts .contact .label {
+  color: #454545;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  margin-right: 16px;
+}
+.home-section .contacts .contact a {
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+}
+.home-section .contacts .contact a:before, .home-section .contacts .contact a:after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  width: 0%;
+  height: 1px;
+  background: #ffffff;
+  z-index: 1;
+}
+.home-section .contacts .contact a:before {
+  left: 0;
+}
+.home-section .contacts .contact a:after {
+  background: #ffffff;
+  right: 0;
+  transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.home-section .contacts .contact a:hover:before {
+  background: #ffffff;
+  width: 100%;
+  transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.home-section .contacts .contact a:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
+.home-section .contacts .contact:last-child {
+  margin-right: 0;
+}
+.home-section .form-group form .form-field {
+  position: relative;
+  width: 450px;
+  max-width: 100%;
+}
+.home-section .form-group form .form-field:before, .home-section .form-group form .form-field:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0%;
+  height: 1px;
+  background: #ffffff;
+  z-index: 1;
+}
+.home-section .form-group form .form-field:before {
+  left: 0;
+}
+.home-section .form-group form .form-field:after {
+  background: #ffffff;
+  right: 0;
+  transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.home-section .form-group form .form-field .input[type="text"] {
+  padding-right: 54px;
+}
+.home-section .form-group form .form-field .btn-submit {
+  padding: 0;
+  position: absolute;
+  right: 20px;
+  top: 0;
+  transition: all 0.27s linear;
+  transition-delay: .2s;
+  font-size: 32px;
+}
+.home-section .form-group form .form-field .btn-submit:hover {
+  color: #ffffff;
+}
+.home-section .form-group form .form-field.focused:before {
+  background: #ffffff;
+  width: 100%;
+  transition: width 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.home-section .form-group form .form-field.focused:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
+.home-section .form-group form .form-field.focused .btn-submit {
+  right: 14px;
+  color: #ffffff;
+}
