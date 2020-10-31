@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Beautevil Design Studio">
+		<meta name="description" content="Qatar's best Escooter sharing app tailored in State of Qatar with feasible and easy available ride options">
+		<meta name="keywords" content="loop, e-scooter">
+
+		<!-- favicon -->
+		<link rel="shortcut icon" href="assets/images/favicon.ico">
+		<link rel="apple-touch-icon" href="assets/images/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
+
+		<title>Loop Mobility | First E-scooter Sharing App Qatar</title>
+
+		<!-- fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+		<!-- styles -->
+		<link href="assets/css/plugins.css" rel="stylesheet" type="text/css">
+		<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body class="preloader cursor-anim-enable">
+		<div class="preloader__out-overlay"></div>
+
+		<!-- preloader-loading start -->
+		<div class="preloader__loading in">
+			<div class="preloader__loading-anim" data-splitting>Looping...</div>
+		</div>
+		<div class="preloader__loading out">
+			<div class="preloader__loading-anim" data-splitting>Looping...</div>
+		</div><!-- preloader-loading end -->
+
+		<!-- pointer start -->
+		<div class="pointer js-pointer" id="js-pointer">
+			<div class="pointer__inner drag">drag</div>
+			<i class="pointer__inner fas fa-search"></i>
+		</div><!-- pointer end -->
+
+		<!-- header start -->
+		<header class="fixed-header">
+			<!-- logo start -->
+			<a href="index.html" class="js-pointer-large js-animsition-link">					
+			    <div class="header-logo">
+                    <div class="header-logo__box">
+                        <img class="header-logo__img" src="assets/images/logo/logo.png" alt="logo">
+                    </div>
+                </div>
+            </a>
+			<!-- logo end -->
+
+			<!-- menu-icon start -->
+			<div class="menu-icon js-menu-open-close js-pointer-large">
+				<div class="menu-icon__box">
+					<span class="menu-icon__inner"></span>
+					<span class="menu-icon__close"></span>
+				</div>
+			</div><!-- menu-icon end -->
+		</header><!-- header end -->
+
+		<!-- navigation overlay -->
+		<div class="nav-overlay"></div>
+		<!-- navigation start -->
+		<nav class="nav-container js-dropdown-active-box">
+			<!-- nav-box start -->
+			<div class="container small nav-box">
+				<!-- dropdown close btn start -->
+				<div class="dropdown-close">
+					<div class="dropdown-close__inner js-dropdown-close js-pointer-large">
+						<span class="dropdown-close__arrow"></span>
+					</div>
+				</div><!-- dropdown close btn end -->
+
+				<!-- menu-box start -->
+				<ul class="menu-box nav-bg-overlay-box">
+					<!-- nav-btn-box start -->
+					<li class="nav-btn-box js-nav-bg-change js-nav-bg-active">
+						<a href="index.html" class="nav-btn dropdown-hidden-btn js-animsition-link js-pointer-large">
+							<span class="nav-btn__inner" data-text="Home">Home</span>
+						</a>
+						<div class="nav-bg-box">
+							<div class="nav-bg" style="background-image: url(assets/images/menu/bonnet-casual-close-up-2802601.jpg);"></div>
+						</div>
+					</li><!-- nav-btn-box end -->
+
+					<!-- nav-btn-box start -->
+					<li class="nav-btn-box js-nav-bg-change">
+						<a href="about.html" class="nav-btn dropdown-hidden-btn js-animsition-link js-pointer-large">
+							<span class="nav-btn__inner" data-text="About">About</span>
+						</a>
+						<div class="nav-bg-box">
+							<div class="nav-bg" style="background-image: url(assets/images/menu/pexels-marlene-1019771.jpg);"></div>
+						</div>
+					</li><!-- nav-btn-box end -->
+
+					<!-- nav-btn-box start -->
+					<li class="nav-btn-box js-nav-bg-change">
+						<a href="services.html" class="nav-btn dropdown-hidden-btn js-animsition-link js-pointer-large">
+							<span class="nav-btn__inner" data-text="Services">Services</span>
+						</a>
+						<div class="nav-bg-box">
+							<div class="nav-bg" style="background-image: url(assets/images/menu/two-vases-on-table-842950.jpg);"></div>
+						</div>
+					</li><!-- nav-btn-box end -->
+
+					<!-- nav-btn-box start -->
+					<li class="nav-btn-box js-nav-bg-change js-dropdown-open">
+						<a class="nav-btn dropdown-hidden-btn js-pointer-large">
+							<span class="nav-btn__inner" data-text="Portfolio">Portfolio</span>
+						</a>
+
+						<!-- dropdown start -->
+						<ul class="menu-box dropdown js-dropdown">
+							<li class="nav-btn-box">
+								<a href="portfolio_fullscreen.html" class="nav-btn js-animsition-link js-pointer-large">
+									<span class="nav-btn__inner" data-text="Fullscreen">Fullscreen</span>
+								</a>
+							</li>
+							<li class="nav-btn-box">
+								<a href="portfolio_carousel.html" class="nav-btn js-animsition-link js-pointer-large">
+									<span class="nav-btn__inner" data-text="Carousel">Carousel</span>
+								</a>
+							</li>
+							<li class="nav-btn-box">
+								<a href="portfolio_grid-3-col.html" class="nav-btn js-animsition-link js-pointer-large">
+									<span class="nav-btn__inner" data-text="Grid 3 Col">Grid 3 Col</span>
+								</a>
+							</li>
+							<li class="nav-btn-box">
+								<a href="portfolio_flex-columns.html" class="nav-btn js-animsition-link js-pointer-large">
+									<span class="nav-btn__inner" data-text="Flex Columns">Flex Columns</span>
+								</a>
+							</li>
+							<li class="nav-btn-box">
+								<a href="portfolio_creative-grid.html" class="nav-btn js-animsition-link js-pointer-large">
+									<span class="nav-btn__inner" data-text="Creative Grid">Creative Grid</span>
+								</a>
+							</li>
+						</ul><!-- dropdown end -->
+
+						<div class="nav-bg-box">
+							<div class="nav-bg" style="background-image: url(assets/images/menu/goashape-RvyJGaoaWrs-unsplash.jpg);"></div>
+						</div>
+					</li><!-- nav-btn-box end -->
+
+					<!-- nav-btn-box start -->
+					<li class="nav-btn-box js-nav-bg-change">
+						<a href="blog.html" class="nav-btn dropdown-hidden-btn js-animsition-link js-pointer-large">
+							<span class="nav-btn__inner" data-text="Blog">Blog</span>
+						</a>
+						<div class="nav-bg-box">
+							<div class="nav-bg" style="background-image: url(assets/images/menu/face-facial-hair-fashionable-2555100.jpg);"></div>
+						</div>
+					</li><!-- nav-btn-box end -->
+
+					<!-- nav-btn-box start -->
+					<li class="nav-btn-box js-nav-bg-change">
+						<a href="contact.html" class="nav-btn dropdown-hidden-btn js-animsition-link js-pointer-large">
+							<span class="nav-btn__inner" data-text="Contact">Contact</span>
+						</a>
+						<div class="nav-bg-box">
+							<div class="nav-bg" style="background-image: url(assets/images/menu/architectural-design-architecture-building-exterior-1707823.jpg);"></div>
+						</div>
+					</li><!-- nav-btn-box end -->
+				</ul><!-- menu-box end -->
+			</div><!-- nav-box end -->
+		</nav><!-- navigation end -->
+
+		<!-- scroll-content start -->
+		<div id="js-scroll-content">
+			<!-- js-animsition-overlay start -->
+			<div class="js-animsition-overlay" data-animsition-overlay="true">
+				<!-- main start -->
+				<main class="main-content">
+					<!-- page head start -->
+					<section id="up" class="section-bg-dark" data-scroll-section>
+						<!-- home slider start -->
+						<div class="pos-rel hidden-box js-home-slider page-head-footer-overlay-fix" data-scroll data-scroll-repeat>
+							<!-- swiper-wrapper start -->
+							<div class="swiper-wrapper">
+								<!-- swiper-slide start -->
+								<div class="swiper-slide">
+									<!-- background start -->
+									<div class="js-parallax-slide-bg">
+										<div class="bg-img-cover height-100perc" style="background-image: url(assets/images/backgrounds/electricScooter_03.jpg);" data-scroll data-scroll-speed="-1.5"></div>
+									</div><!-- background end -->
+
+									<!-- bg-overlay -->
+									<div class="bg-overlay-black"></div>
+
+									<!-- content start -->
+									<div class="flex-min-height-100vh">
+										<div class="container small padding-top-bottom-150 text-center">
+											<div>
+												<div class="width-100perc d-inline-block">
+													<h2 class="headline-l headline-uppercase anim-split-lines">
+														<span class="text-stroke-white">Explore</span> <br> Your City
+													</h2>
+												</div>
+											</div>
+											<div class="margin-top-40 anim-fade-to-top">
+												<div data-scroll data-scroll-speed="-0.3" data-scroll-position="top">
+													<a href="#" class="border-btn js-pointer-large">
+														<span class="border-btn__inner">Ride Now</span>
+														<span class="border-btn__lines-1"></span>
+														<span class="border-btn__lines-2"></span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div><!-- content end -->
+								</div><!-- swiper-slide end -->
+
+								<!-- swiper-slide start -->
+								<div class="swiper-slide">
+									<!-- background start -->
+									<div class="js-parallax-slide-bg">
+										<div class="bg-img-cover height-100perc" style="background-image: url(assets/images/backgrounds/revolt-BMest61rcqs-unsplash.jpg);" data-scroll data-scroll-speed="-1.5"></div>
+									</div><!-- background end -->
+
+									<!-- bg-overlay -->
+									<div class="bg-overlay-black"></div>
+
+									<!-- content start -->
+									<div class="flex-min-height-100vh">
+										<div class="container small padding-top-bottom-150 text-center">
+											<div>
+												<div class="width-100perc d-inline-block">
+													<h2 class="headline-l headline-uppercase anim-split-lines">
+														<span class="text-stroke-white">Electric</span> <br> Scooters
+													</h2>
+												</div>
+											</div>
+											<div class="margin-top-40 anim-fade-to-top">
+												<div data-scroll data-scroll-speed="-0.3" data-scroll-position="top">
+													<a href="#" class="border-btn js-pointer-large">
+														<span class="border-btn__inner">Ride Now</span>
+														<span class="border-btn__lines-1"></span>
+														<span class="border-btn__lines-2"></span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div><!-- content end -->
+								</div><!-- swiper-slide end -->
+
+								<!-- swiper-slide start -->
+								<div class="swiper-slide">
+									<!-- background start -->
+									<div class="js-parallax-slide-bg">
+										<div class="bg-img-cover height-100perc" style="background-image: url(assets/images/backgrounds/roman-bozhko-PypjzKTUqLo-unsplash.jpg);" data-scroll data-scroll-speed="-1.5"></div>
+									</div><!-- background end -->
+
+									<!-- bg-overlay -->
+									<div class="bg-overlay-black"></div>
+
+									<!-- content start -->
+									<div class="flex-min-height-100vh">
+										<div class="container small padding-top-bottom-150 text-center">
+											<div>
+												<div class="width-100perc d-inline-block">
+													<h2 class="headline-l headline-uppercase anim-split-lines">
+														<span class="text-stroke-white">Electric</span> <br> Bikes
+													</h2>
+												</div>
+											</div>
+											<div class="margin-top-40 anim-fade-to-top">
+												<div data-scroll data-scroll-speed="-0.3" data-scroll-position="top">
+													<a href="#" class="border-btn js-pointer-large">
+														<span class="border-btn__inner">Ride Now</span>
+														<span class="border-btn__lines-1"></span>
+														<span class="border-btn__lines-2"></span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div><!-- content end -->
+								</div><!-- swiper-slide end -->
+							</div><!-- swiper-wrapper end -->
+
+							<!-- swiper-button-prev start -->
+							<div class="swiper-button-prev-box after-preloader-anim">
+								<div class="anim-fade-to-right tr-delay-03">
+									<div class="swiper-button-prev"></div>
+								</div>
+							</div><!-- swiper-button-prev end -->
+							<!-- swiper-button-next start -->
+							<div class="swiper-button-next-box after-preloader-anim">
+								<div class="anim-fade-to-left tr-delay-03">
+									<div class="swiper-button-next"></div>
+								</div>
+							</div><!-- swiper-button-next end -->
+
+							<!-- swiper-pagination start -->
+							<div class="pagination-box vertical-pagination after-preloader-anim">
+								<div class="anim-fade-to-top d-block tr-delay-06">
+									<div class="swiper-pagination"></div>
+								</div>
+							</div><!-- swiper-pagination end -->
+
+							<!-- to top btn start -->
+							<a href="#down" class="scroll-to-btn to-down js-pointer-large" data-scroll-to>
+								<div class="scroll-to-down-box">
+									<span class="scroll-to-btn__arrow"></span>
+								</div>
+							</a><!-- to top btn end -->
+						</div><!-- home slider end -->
+					</section><!-- page head end -->
+
+					
+                   
+                   
+                   <!-- how to start -->
+					<section id="down" class="section-bg-light" data-scroll-section>
+						<!-- container start -->
+						<div class="container padding-top-60 padding-bottom-150">
+							<!-- flex-container start -->
+							<div class="flex-container flex-align-center padding-top-60">
+								<!-- column start -->
+								<div class="five-columns padding-top-30">
+									<div class="hidden-box">
+										<div data-scroll data-scroll-speed="-1.2">
+											<div class="anim-img-reveal" data-scroll data-scroll-offset="10%" style="background-image:url(assets/images/app/dl.jpg)">
+												<img src="assets/images/app/dl.jpg" alt="About us">
+											</div>
+										</div>
+									</div>
+								</div><!-- column end -->
+								<!-- column start -->
+                                <div class="seven-columns">
+                                    <div class="padding-top-30 text-color-mix-blend" data-scroll data-scroll-speed="1">
+                                        <div class="d-inline-block">
+                                            <div class="scrollanim-activate" data-scroll data-scroll-offset="20%">
+                                                <div class="hidden-box text-left-offset">
+                                                    <h2 class="headline-xl anim-text-slide">How to Ride</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="column-l-margin-40 margin-top-20">
+                                            <p class="body-text-m max-width-400 d-inline-block anim-split-lines" data-scroll data-scroll-offset="20%">Download Loop app from App Store or Play store</p>
+                                        </div>
+                                    </div>
+                                    <div class="padding-left-30 scrollanim-activate">
+                                        <div data-scroll>
+                                            <div class="anim-img-reveal badge" data-scroll data-scroll-offset="30%" style="background-image:url(assets/images/app/qrcode.png)">
+                                                    <img src="assets/images/app/qrcode.png" alt="App">
+                                            </div>
+										</div>
+                                        <div data-scroll>
+                                            <a href="#" class="js-pointer-large">
+                                                <div class="anim-img-reveal badge" data-scroll data-scroll-offset="30%" style="background-image:url(assets/images/app/app-en.png)">
+                                                        <img src="assets/images/app/app-en.png" alt="App">
+                                                </div>
+                                            </a>
+										</div>
+                                       <div data-scroll>
+                                           <a href="#" class="js-pointer-large">
+                                                <div class="anim-img-reveal badge" data-scroll data-scroll-offset="40%" style="background-image:url(assets/images/app/play-en.png)">
+                                                    <img src="assets/images/app/play-en.png" alt="Play">
+                                                </div>
+                                           </a>
+										</div>
+                                    </div>
+                                </div>
+								<!-- column end -->
+							</div><!-- flex-container end -->
+							
+						</div><!-- container end -->
+					</section><!-- how to end -->
+                   
+                   
+                   
+                   <!-- app start -->
+					<section class="pos-rel section-bg-dark" data-scroll-section>
+						<div class="app">
+						    <!-- js-carousel-slider-bg start -->
+                            <div class="js-carousel-slider-bg content-bg-dark">
+                                <!-- swiper-wrapper start -->
+                                <div class="swiper-wrapper slider-scrollanim-activate" data-scroll>
+                                    <!-- swiper-slide start -->
+                                    <div class="swiper-slide height-100perc d-flex flex-align-center">
+
+                                            <img src="assets/images/app/1.png" alt="Find">
+<!--                                    <img src="assets/images/portfolio/project_02/main.jpg" alt="">-->
+
+                                    </div><!-- swiper-slide end -->
+
+                                    <!-- swiper-slide start -->
+                                    <div class="swiper-slide height-100perc d-flex flex-align-center">
+
+                                            <img src="assets/images/app/2.png" alt="Scan">
+<!--                                    <img src="assets/images/portfolio/project_02/main.jpg" alt="">-->
+
+                                    </div><!-- swiper-slide end -->
+
+                                    <!-- swiper-slide start -->
+                                    <div class="swiper-slide height-100perc d-flex flex-align-center">
+
+                                            <img src="assets/images/app/3.png" alt="Ride">
+<!--                                    <img src="assets/images/portfolio/project_02/main.jpg" alt="">-->
+
+                                    </div><!-- swiper-slide end -->
+
+                                </div><!-- swiper-wrapper end -->
+                            </div><!-- js-carousel-slider-bg end -->
+						</div>
+
+						<!-- js-carousel-slider start -->
+						<div class="js-carousel-slider">
+							<!-- swiper-wrapper start -->
+							<div class="swiper-wrapper">
+								<!-- swiper-slide start -->
+								<h2 class="swiper-slide d-flex flex-justify-center flex-align-start text-center margin-top-120">
+									<div class="headline-l anim-stroke-fill-white js-pointer-large js-animsition-link" data-text="FIND">FIND</div>
+								</h2><!-- swiper-slide end -->
+
+								<!-- swiper-slide start -->
+								<h2 class="swiper-slide d-flex flex-justify-center flex-align-start text-center margin-top-120">
+									<div class="headline-l anim-stroke-fill-white js-pointer-large js-animsition-link" data-text="SCAN">SCAN</div>
+								</h2><!-- swiper-slide end -->
+
+								<!-- swiper-slide start -->
+								<h2 class="swiper-slide d-flex flex-justify-center flex-align-start text-center margin-top-120">
+									<div class="headline-l anim-stroke-fill-white js-pointer-large js-animsition-link" data-text="RIDE">RIDE</div>
+								</h2><!-- swiper-slide end -->
+
+							</div><!-- swiper-wrapper end -->
+
+							<!-- swiper-button-prev start -->
+							<div class="swiper-button-prev-box after-preloader-anim">
+								<div class="anim-fade-to-left tr-delay-03">
+									<div class="swiper-button-prev"></div>
+								</div>
+							</div><!-- swiper-button-prev end -->
+							<!-- swiper-button-next start -->
+							<div class="swiper-button-next-box after-preloader-anim">
+								<div class="anim-fade-to-right tr-delay-03">
+									<div class="swiper-button-next"></div>
+								</div>
+							</div><!-- swiper-button-next end -->
+
+							<!-- swiper-pagination start -->
+							<div class="pagination-box after-preloader-anim">
+								<div class="anim-fade-to-top d-block tr-delay-06">
+									<div class="swiper-pagination"></div>
+								</div>
+							</div><!-- swiper-pagination end -->
+						</div><!-- js-carousel-slider end -->
+					</section><!-- app end -->
+                    
+            
+                    
+                    
+                <!--plugin start-->
+                
+					<div class="section-bg-dark" data-scroll-section>
+					    
+						<!-- padding-top-120 start -->
+						<div class="padding-top-120 padding-bottom-150">
+						<!-- video-bg-box start -->
+							<div class="video-bg-box">
+								<video src="assets/video/charging.mp4" class="video-bg" muted loop autoplay playsinline poster="assets/images/backgrounds/team.jpg"></video>
+							</div><!-- video-bg-box end -->
+							<!-- bg-overlay -->
+							<div class="bg-overlay-black"></div>
+							<!-- title start -->
+							<div class="pos-rel">
+								<h2 class="title-offset big-head container full z-index-2 text-stroke-white pointer-none padding-top-30 after-preloader-anim">
+									<span class="d-block" data-scroll data-scroll-speed="1" data-scroll-direction="horizontal" data-scroll-position="top" >
+										<span class="anim-chars-fadein" data-splitting>Get Paid</span>
+									</span>
+								</h2>
+							</div><!-- title end -->
+                        
+							
+							<div class="padding-top-150">
+									<div data-scroll data-scroll-speed="0.6">
+							
+										<!-- post content start -->
+										<div class="margin-top-120 padding-bottom-20 pos-rel scrollanim-activate line-scrollanim-activate" data-scroll data-scroll-offset="30%">
+                                            <h3 class="headline-s text-color-white text-center">Become a Loop Saver</h3>
+                                            <p class="body-text-m margin-top-30 text-color-white text-center">Loop also required energy Connect to the Community and get paid to charge a Loop.</p>
+										</div><!-- post content end -->
+									</div>
+							</div><!-- js-isotope-grid-box end -->
+							
+							
+						</div><!-- padding-top-120 end -->
+					</div>
+                
+                <!--plugin-end-->
+                    
+                    
+                    
+
+					<!-- about us start -->
+					<div class="section-bg-dark" data-scroll-section>
+						<!-- padding-top-30 start -->
+						<div class="padding-top-30 padding-bottom-120">
+							<!-- flex-container start -->
+							<section class="flex-container container padding-top-100 padding-bottom-30">
+								<!-- column start -->
+								<div class="four-columns column-100-999 padding-top-20">
+									<div class="column-r-margin-40-999">
+										<h2 class="headline-xxs">
+											<span class="d-block anim-split-lines" data-scroll data-scroll-offset="20%">Who We Are</span>
+										</h2>
+									</div>
+								</div><!-- column end -->
+
+								<!-- column start -->
+								<div class="eight-columns column-100-999 padding-top-20">
+									<p class="body-text-m text-color-dadada anim-split-lines" data-scroll data-scroll-offset="20%">Formed by Qatar's first-generation young entrepreneur with a passion to bring in the mobility revolution in Qatar market in various sectors has taken up the vision to support the government program in reshaping the nation. Loop Mobility is considering a move to create and provide a scooter sharing service for the residents in Doha. Until now there is no such service in Doha, which limited the development of public transport. By offering this kind of solution in Doha, it helps to solve the first-and last-mile problems, which will extend the accessibility of public transport across the country. Through the scooter sharing service, Loop Mobility aims to enter an entirely new market, increase revenue, create social benefits, and allow customers to use green method for commuting.</p>
+								</div><!-- column end -->
+							</section><!-- flex-container end -->
+						</div><!-- padding-top-30 end -->
+					</div><!-- about us end -->
+
+					<!-- section-bg-light start -->
+					<div class="section-bg-light" data-scroll-section>
+						<!-- padding-top-bottom-30 start -->
+						<div class="padding-top-bottom-30">
+							<!-- advantages start -->
+							<section class="padding-top-100 padding-bottom-30 container">
+								<div class="scrollanim-activate" data-scroll>
+									<div class="anim-fade-to-left d-block">
+										<!-- js-services-slider start -->
+										<div class="js-skills-slider js-pointer-drag" data-scroll data-scroll-speed="2" data-scroll-direction="horizontal">
+											<!-- swiper-wrapper start -->
+											<div class="swiper-wrapper">
+												<!-- swiper-slide start -->
+												<div class="swiper-slide">
+													<div class="flex-container reverse flex-align-center">
+														<div class="six-columns padding-top-20">
+															<div class="column-r-margin-40">
+																<h3 class="headline-xxs text-color-black">Clean & Minimal</h3>
+																<p class="body-text-m text-color-6d6d6d margin-top-20">Chambray enamel pin synth shabby chic palo santo. Franzen 90's man bun wayfarers, put a bird on it twee four loko roof party shabby chic kale chips photo booth salvia mixtape lumbersexual.</p>
+															</div>
+														</div>
+														<div class="six-columns padding-top-20">
+															<img src="assets/images/advantages/ceyda-ciftci-8Xv-XTph1AQ-unsplash.jpg" alt="Advantages">
+														</div>
+													</div>
+												</div><!-- swiper-slide end -->
+
+												<!-- swiper-slide start -->
+												<div class="swiper-slide">
+													<div class="flex-container reverse flex-align-center">
+														<div class="six-columns padding-top-20">
+															<div class="column-r-margin-40">
+																<h3 class="headline-xxs text-color-black">Team of Professionals</h3>
+																<p class="body-text-m text-color-6d6d6d margin-top-20">Pok pok authentic fashion axe, vegan venmo leggings raclette tousled twee tattooed. Banh mi humblebrag hammock tacos fashion axe aesthetic vegan sustainable taiyaki thundercats jean.</p>
+															</div>
+														</div>
+														<div class="six-columns padding-top-20">
+															<img src="assets/images/advantages/ceyda-ciftci-SQ_Ad8NfmYE-unsplash.jpg" alt="Advantages">
+														</div>
+													</div>
+												</div><!-- swiper-slide end -->
+
+												<!-- swiper-slide start -->
+												<div class="swiper-slide">
+													<div class="flex-container reverse flex-align-center">
+														<div class="six-columns padding-top-20">
+															<div class="column-r-margin-40">
+																<h3 class="headline-xxs text-color-black">Quality Service</h3>
+																<p class="body-text-m text-color-6d6d6d margin-top-20">Copper mug vexillologist +1 prism iPhone fashion axe portland. Hella quinoa woke blog af umami tacos freegan vinyl snackwave microdosing. Fanny pack direct trade XOXO drinking vinegar.</p>
+															</div>
+														</div>
+														<div class="six-columns padding-top-20">
+															<img src="assets/images/advantages/marten-bjork-ANGrwTKxjlk-unsplash.jpg" alt="Advantages">
+														</div>
+													</div>
+												</div><!-- swiper-slide end -->
+
+												<!-- swiper-slide start -->
+												<div class="swiper-slide">
+													<div class="flex-container reverse flex-align-center">
+														<div class="six-columns padding-top-20">
+															<div class="column-r-margin-40">
+																<h3 class="headline-xxs text-color-black">Analysis, Design and Strategy</h3>
+																<p class="body-text-m text-color-6d6d6d margin-top-20">Pitchfork vaporware hella, vice next level art party subway tile swag portland. Cliche authentic photo booth, seitan sartorial iPhone brooklyn bicycle rights whatever small batch selvage.</p>
+															</div>
+														</div>
+														<div class="six-columns padding-top-20">
+															<img src="assets/images/advantages/aiony-haust-f2ar0ltTvaI-unsplash.jpg" alt="Advantages">
+														</div>
+													</div>
+												</div><!-- swiper-slide end -->
+											</div><!-- swiper-wrapper end -->
+										</div><!-- js-services-slider end -->
+									</div>
+								</div>
+							</section><!-- advantages end -->
+
+							<!-- team start -->
+							<section class="padding-top-bottom-120 container small">
+								<h2 class="headline-xxxl text-color-black anim-split-lines" data-scroll data-scroll-offset="20%">Our Creative Team</h2>
+
+								<!-- flex-container start -->
+								<div class="flex-container flex-align-center padding-top-60">
+									<div class="six-columns padding-top-30">
+										<div class="hidden-box">
+											<div data-scroll data-scroll-speed="-1.2">
+												<div class="anim-img-reveal" data-scroll style="background-image:url(assets/images/team/ian-dooley-wzRKn-AjKf4-unsplash.jpg)">
+													<img src="assets/images/team/ian-dooley-wzRKn-AjKf4-unsplash.jpg" alt="Jason Hardeman">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="six-columns padding-top-30" data-scroll data-scroll-speed="1">
+										<div class="column-l-margin-40 scrollanim-activate" data-scroll data-scroll-offset="20%">
+											<div class="anim-fade-to-top">
+												<h4 class="headline-xxxs text-color-black">Jason Hardeman</h4>
+												<div class="subhead-xxs text-color-black margin-top-5">Creative Director</div>
+												<p class="body-text-xs text-color-6d6d6d margin-top-20">Cardigan disrupt fashion axe post-ironic, cold-pressed woke hoodie letterpress YOLO schlitz sartorial etsy prism squid church-key. Cliche kickstarter yr, twee offal craft beer actually live-edge waistcoat cardigan you probably haven't heard of them.</p>
+											</div>
+										</div>
+									</div>
+								</div><!-- flex-container end -->
+
+								<!-- flex-container start -->
+								<div class="flex-container reverse flex-align-center padding-top-60">
+									<div class="six-columns padding-top-30" data-scroll data-scroll-speed="1">
+										<div class="column-r-margin-40 text-right scrollanim-activate" data-scroll data-scroll-offset="20%">
+											<div class="anim-fade-to-top">
+												<h4 class="headline-xxxs text-color-black">Amanda Bryan</h4>
+												<div class="subhead-xxs text-color-black margin-top-5">Front-end Developer</div>
+												<p class="body-text-xs text-color-6d6d6d margin-top-20">Pinterest lumbersexual forage chillwave godard pitchfork vexillologist deep v chia truffaut four dollar toast food truck meditation. Hot chicken coloring book cliche YOLO, crucifix kale chips swag hexagon raclette paleo next level austin yuccie thundercats.</p>
+											</div>
+										</div>
+									</div>
+									<div class="six-columns padding-top-30">
+										<div class="hidden-box">
+											<div data-scroll data-scroll-speed="-1.2">
+												<div class="anim-img-reveal" data-scroll style="background-image:url(assets/images/team/force-majeure-GGPq78xM8T0-unsplash.jpg)">
+													<img src="assets/images/team/force-majeure-GGPq78xM8T0-unsplash.jpg" alt="Amanda Bryan">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div><!-- flex-container end -->
+
+								<!-- flex-container start -->
+								<div class="flex-container flex-align-center padding-top-60">
+									<div class="six-columns padding-top-30">
+										<div class="hidden-box">
+											<div data-scroll data-scroll-speed="-1.2">
+												<div class="anim-img-reveal" data-scroll style="background-image:url(assets/images/team/force-majeure-8eu-hAhCRhk-unsplash.jpg)">
+													<img src="assets/images/team/force-majeure-8eu-hAhCRhk-unsplash.jpg" alt="Henry Matthews">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="six-columns padding-top-30" data-scroll data-scroll-speed="1">
+										<div class="column-l-margin-40 scrollanim-activate" data-scroll data-scroll-offset="20%">
+											<div class="anim-fade-to-top">
+												<h4 class="headline-xxxs text-color-black">Henry Matthews</h4>
+												<div class="subhead-xxs text-color-black margin-top-5">UX/UI Designer</div>
+												<p class="body-text-xs text-color-6d6d6d margin-top-20">Pitchfork green juice meh ethical slow-carb poke authentic salvia skateboard helvetica tousled bicycle rights ennui. Hot chicken ugh drinking vinegar, edison bulb dreamcatcher meh craft beer offal tousled gluten-free locavore. Franzen schlitz gochujang.</p>
+											</div>
+										</div>
+									</div>
+								</div><!-- flex-container end -->
+							</section><!-- team end -->
+
+							<!-- marquee start -->
+							<section class="padding-top-bottom-30">
+								<div class="padding-top-bottom-90 pos-rel">
+									<div class="line-top black"></div>
+									<!-- marquee start -->
+									<h3 class="marquee headline-xxxxl text-color-black headline-uppercase hidden-box" data-duration="20000" data-gap="20">
+										/ We generate
+										<span class="text-stroke-black">Creative</span>
+										& novation
+										<span class="text-stroke-black">ideas</span>
+										/ We generate
+										<span class="text-stroke-black">Creative</span>
+										& novation
+										<span class="text-stroke-black">ideas</span>
+									</h3><!-- marquee end -->
+									<div class="line-bottom black"></div>
+								</div>
+							</section><!-- marquee end -->
+
+							<!-- blog start -->
+							<section class="padding-top-bottom-120">
+								<!-- title start -->
+								<div class="container small">
+									<h2 class="headline-xxxl text-color-black anim-split-lines" data-scroll data-scroll-offset="20%">News &amp; Updates</h2>
+								</div><!-- title end -->
+
+								<!-- container start -->
+								<div class="container flex-container">
+									<!-- post start -->
+									<article class="four-columns padding-top-90">
+										<div class="column-l-r-margin-20">
+											<!-- post img start -->
+											<a href="single-post.html" class="d-block hidden-box js-pointer-large js-animsition-link scrollanim-activate" data-scroll>
+												<div data-scroll data-scroll-speed="-1.3">
+													<div class="anim-scale">
+														<img class="anim-scale__inner" src="assets/images/blog/anastasiya-pavlova-ONW1Acmp_aA-unsplash.jpg" alt="Post">
+													</div>
+												</div>
+											</a><!-- post img end -->
+											<!-- post content start -->
+											<div class="padding-top-bottom-20 pos-rel scrollanim-activate line-scrollanim-activate" data-scroll data-scroll-offset="30%">
+												<div class="anim-fade-to-left">
+													<a href="single-post.html" class="d-block margin-bottom-20 js-pointer-large js-animsition-link">
+														<h3 class="headline-xxxs text-color-black">Messenger bag<br>tile disrupt taxidermy</h3>
+														<p class="body-text-xs text-color-6d6d6d margin-top-10">Snackwave etsy yuccie mixtape ugh VHS cornhole polaroid. Mlkshk kinfolk stumptown synth, ugh chia YOLO...</p>
+													</a>
+													<ul class="list list_row list_margin-30px text-color-black">
+														<li class="list__item">
+															<a href="#" class="subhead-xxs js-pointer-small">By: Jeffery Reder</a>
+														</li>
+														<li class="list__item">
+															<a href="#" class="subhead-xxs js-pointer-small">In: Design</a>
+														</li>
+														<li class="list__item">
+															<a href="#" class="subhead-xxs js-pointer-small">2020, March 25</a>
+														</li>
+													</ul>
+												</div>
+												<div class="anim-line-bottom black"></div>
+											</div><!-- post content end -->
+										</div>
+									</article><!-- post end -->
+
+									<!-- post start -->
+									<article class="four-columns padding-top-90">
+										<div class="column-l-r-margin-20">
+											<!-- post img start -->
+											<a href="single-post.html" class="d-block hidden-box js-pointer-large js-animsition-link scrollanim-activate" data-scroll>
+												<div data-scroll data-scroll-speed="-1.3">
+													<div class="anim-scale">
+														<img class="anim-scale__inner" src="assets/images/blog/logan-weaver-Xa0I6XMMlxI-unsplash.jpg" alt="Post">
+													</div>
+												</div>
+											</a><!-- post img end -->
+											<!-- post content start -->
+											<div class="padding-top-bottom-20 pos-rel scrollanim-activate line-scrollanim-activate" data-scroll data-scroll-offset="30%">
+												<div class="anim-fade-to-left">
+													<a href="single-post.html" class="d-block margin-bottom-20 js-pointer-large js-animsition-link">
+														<h3 class="headline-xxxs text-color-black">Blue bottle palo<br>santo selvage</h3>
+														<p class="body-text-xs text-color-6d6d6d margin-top-10">Tattooed typewriter gluten-free cronut, church-key etsy affogato post-ironic hoodie tacos kale chips DIY yuccie...</p>
+													</a>
+													<ul class="list list_row list_margin-30px text-color-black">
+														<li class="list__item">
+															<a href="#" class="subhead-xxs js-pointer-small">By: Nick Hufnagel</a>
+														</li>
+														<li class="list__item">
+															<a href="#" class="subhead-xxs js-pointer-small">In: Culture</a>
+														</li>
+														<li class="list__item">
+															<a href="#" class="subhead-xxs js-pointer-small">2020, March 18</a>
+														</li>
+													</ul>
+												</div>
+												<div class="anim-line-bottom black"></div>
+											</div><!-- post content end -->
+										</div>
+									</article><!-- post end -->
+
+									<!-- post start -->
+									<article class="four-columns padding-top-90">
+										<div class="column-l-r-margin-20">
+											<!-- post img start -->
+											<a href="single-post.html" class="d-block hidden-box js-pointer-large js-animsition-link scrollanim-activate" data-scroll>
+												<div data-scroll data-scroll-speed="-1.3">
+													<div class="anim-scale">
+														<img class="anim-scale__inner" src="assets/images/blog/logan-weaver-irhk3yFdetw-unsplash.jpg" alt="Post">
+													</div>
+												</div>
+											</a><!-- post img end -->
+											<!-- post content start -->
+											<div class="padding-top-bottom-20 pos-rel scrollanim-activate line-scrollanim-activate" data-scroll data-scroll-offset="30%">
+												<div class="anim-fade-to-left">
+													<a href="single-post.html" class="d-block margin-bottom-20 js-pointer-large js-animsition-link">
+														<h3 class="headline-xxxs text-color-black">Shaman hell of next<br>level actually</h3>
+														<p class="body-text-xs text-color-6d6d6d margin-top-10">Aesthetic scenester before they sold out deep v, vaporware etsy health goth cronut pork belly brunch franzen master...</p>
+													</a>
+													<ul class="list list_row list_margin-30px text-color-black">
+														<li class="list__item">
+															<a href="#" class="subhead-xxs js-pointer-small">By: Nancy Newton</a>
+														</li>
+														<li class="list__item">
+															<a href="#" class="subhead-xxs js-pointer-small">In: Design</a>
+														</li>
+														<li class="list__item">
+															<a href="#" class="subhead-xxs js-pointer-small">2020, March 12</a>
+														</li>
+													</ul>
+												</div>
+												<div class="anim-line-bottom black"></div>
+											</div><!-- post content end -->
+										</div>
+									</article><!-- post end -->
+								</div><!-- container end -->
+							</section><!-- blog end -->
+						</div><!-- padding-top-bottom-30 end -->
+					</div><!-- section-bg-light end -->
+					
+					
+					
+					 <!-- gallery start -->
+					<div class="section-bg-light" data-scroll-section>
+						<!-- padding-top-bottom-30 start -->
+						<div class="padding-top-bottom-30">
+							<!-- img marquee start -->
+							<section class="padding-top-bottom-120">
+								<div class="scrollanim-activate" data-scroll>
+
+									<!-- js-infinite-slider start -->
+									<div class="js-infinite-slider hidden-box anim-fade-to-top d-block">
+										<!-- swiper-wrapper start -->
+										<div class="swiper-wrapper d-flex flex-align-end">
+											<!-- swiper-slide start -->
+											<div class="swiper-slide">
+												<img src="assets/images/about/about_slider/ian-dooley-8HqPXTToMn0-unsplash.jpg" alt="About us">
+											</div><!-- swiper-slide end -->
+
+											<!-- swiper-slide start -->
+											<div class="swiper-slide">
+												<img src="assets/images/about/about_slider/ian-dooley-TT-ROxWj9nA-unsplash-2.jpg" alt="About us">
+												<img class="padding-top-20" src="assets/images/about/about_slider/ian-dooley-sB2hUtvU_Mc-unsplash.jpg" alt="About us">
+											</div><!-- swiper-slide end -->
+
+											<!-- swiper-slide start -->
+											<div class="swiper-slide">
+												<img src="assets/images/about/about_slider/force-majeure-Fn4Lua7N1NE-unsplash.jpg" alt="About us">
+											</div><!-- swiper-slide end -->
+
+											<!-- swiper-slide start -->
+											<div class="swiper-slide">
+												<img src="assets/images/about/about_slider/ian-dooley-pB7dccwGFTM-unsplash.jpg" alt="About us">
+											</div><!-- swiper-slide end -->
+
+											<!-- swiper-slide start -->
+											<div class="swiper-slide">
+												<img src="assets/images/about/about_slider/force-majeure-a5-_X8IktJg-unsplash.jpg" alt="About us">
+												<img class="padding-top-20" src="assets/images/about/about_slider/ian-dooley-toJOG3kbyD0-unsplash-2.jpg" alt="About us">
+											</div><!-- swiper-slide end -->
+
+											<!-- swiper-slide start -->
+											<div class="swiper-slide">
+												<img src="assets/images/about/about_slider/force-majeure-keakjB6qkXs-unsplash.jpg" alt="About us">
+											</div><!-- swiper-slide end -->
+
+											<!-- swiper-slide start -->
+											<div class="swiper-slide">
+												<img src="assets/images/about/about_slider/ian-dooley-HBGUsKKTxdU-unsplash.jpg" alt="About us">
+											</div><!-- swiper-slide end -->
+
+											<!-- swiper-slide start -->
+											<div class="swiper-slide">
+												<img src="assets/images/about/about_slider/force-majeure-Tqv3noCldRc-unsplash-2.jpg" alt="About us">
+												<img class="padding-top-20" src="assets/images/about/about_slider/ian-dooley-Z4by5OSPAHg-unsplash.jpg" alt="About us">
+											</div><!-- swiper-slide end -->
+
+											<!-- swiper-slide start -->
+											<div class="swiper-slide">
+												<img src="assets/images/about/about_slider/ian-dooley-I2jxLD6obeM-unsplash-2.jpg" alt="About us">
+											</div><!-- swiper-slide end -->
+										</div><!-- swiper-wrapper end -->
+									</div><!-- js-infinite-slider end -->
+								</div>
+							</section><!-- img marquee end -->
+						</div><!-- padding-top-bottom-30 end -->
+					</div><!-- gallery end -->
+					
+					
+					
+					
+				</main><!-- main end -->
+
+				<!-- footer start -->
+				<footer class="section-bg-dark" data-scroll-section>
+					<!-- container start -->
+					<div class="container padding-top-bottom-30" data-scroll data-scroll-speed="-4" data-scroll-position="bottom">
+						<!-- flex-container start -->
+						<div class="flex-container flex-align-center">
+							<!-- column start -->
+							<div class="eight-columns padding-top-90">
+								<h4 class="column-l-r-margin-10 headline-s headline-uppercase">
+									Qatar's best <br> Escooter <br> sharing app
+								</h4>
+							</div><!-- column end -->
+
+							<!-- column start -->
+							<div class="four-columns padding-top-90">
+								<ul class="column-l-r-margin-10 list">
+									<li class="list__item">
+										<a href="index.html" class="footer-nav-btn js-pointer-small js-animsition-link">Home</a>
+									</li>
+									<li class="list__item">
+										<a href="about.html" class="footer-nav-btn js-pointer-small js-animsition-link">About</a>
+									</li>
+									<li class="list__item">
+										<a href="services.html" class="footer-nav-btn js-pointer-small js-animsition-link">Services</a>
+									</li>
+									<li class="list__item">
+										<a href="portfolio_fullscreen.html" class="footer-nav-btn js-pointer-small js-animsition-link">Portfolio</a>
+									</li>
+									<li class="list__item">
+										<a href="blog.html" class="footer-nav-btn js-pointer-small js-animsition-link">Blog</a>
+									</li>
+									<li class="list__item">
+										<a href="contact.html" class="footer-nav-btn js-pointer-small js-animsition-link">Contact</a>
+									</li>
+								</ul>
+							</div><!-- column end -->
+						</div><!-- flex-container end -->
+
+						<!-- flex-container start -->
+						<div class="flex-container padding-top-30">
+							<!-- column start -->
+							<div class="four-columns padding-top-60">
+								<div class="column-l-r-margin-10">
+									<div class="headline-xxxxs">Email:</div>
+									<div class="margin-top-20">
+										<a href="#" class="line-btn js-pointer-small">support@loopmobility.co</a>
+										<div class="margin-top-5">
+											<a href="#" class="line-btn js-pointer-small">partnership@loopmobility.co</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- column end -->
+
+							<!-- column start -->
+							<div class="four-columns padding-top-60">
+								<div class="column-l-r-margin-10">
+									<div class="headline-xxxxs">Phone:</div>
+									<div class="margin-top-20">
+										<a href="#" class="subhead-xxs text-color-b0b0b0 text-hover-to-white js-pointer-small">+974 123 456 789</a>
+										<div class="margin-top-5">
+											<a href="#" class="subhead-xxs text-color-b0b0b0 text-hover-to-white js-pointer-small">+974 987 654 321</a>
+										</div>
+									</div>
+								</div>
+							</div><!-- column end -->
+
+							<!-- column start -->
+							<div class="four-columns padding-top-60">
+								<div class="column-l-r-margin-10">
+									<div class="headline-xxxxs">Address:</div>
+									<div class="margin-top-20">
+										<a href="#" class="subhead-xxs text-color-b0b0b0 text-hover-to-white js-pointer-small">
+											Loop Mobility, <br>
+											Dohat Salwa Street, <br>
+											Doha, State of Qatar
+										</a>
+									</div>
+								</div>
+							</div><!-- column end -->
+
+							<!-- column start -->
+							<div class="twelve-columns padding-top-90">
+								<div class="column-l-r-margin-10 padding-top-30 pos-rel">
+									<div class="anim-line-top" data-scroll data-scroll-offset="5%"></div>
+									<!-- footer-social start -->
+									<ul class="list list_row list_margin-30px">
+										<li class="list__item">
+											<a href="#" class="flip-btn js-pointer-small" data-splitting>Facebook</a>
+										</li>
+										<li class="list__item">
+											<a href="#" class="flip-btn js-pointer-small" data-splitting>Dribbble</a>
+										</li>
+										<li class="list__item">
+											<a href="#" class="flip-btn js-pointer-small" data-splitting>Instagram</a>
+										</li>
+										<li class="list__item">
+											<a href="#" class="flip-btn js-pointer-small" data-splitting>Youtube</a>
+										</li>
+										<li class="list__item">
+											<a href="#" class="flip-btn js-pointer-small" data-splitting>Behance</a>
+										</li>
+										<li class="list__item">
+											<a href="#" class="flip-btn js-pointer-small" data-splitting>Twitter</a>
+										</li>
+									</ul><!-- footer-social end -->
+								</div>
+							</div><!-- column end -->
+
+							<!-- column start -->
+							<div class="twelve-columns padding-top-120">
+								<div class="column-l-r-margin-10 pos-rel">
+									<p class="copyright margin-right-30">
+										&copy; Copyright 2020 Loop Mobility. A beautevil.design
+									</p>
+									<!-- to top btn start -->
+									<a href="#up" class="scroll-to-btn js-pointer-large" data-scroll data-scroll-repeat data-scroll-to>
+										<span class="scroll-to-btn__arrow"></span>
+									</a><!-- to top btn end -->
+								</div>
+							</div><!-- column end -->
+						</div><!-- flex-container end -->
+					</div><!-- container end -->
+				</footer><!-- footer end -->
+			</div><!-- js-animsition-overlay end -->
+		</div><!-- scroll-content end -->
+
+		<!-- scripts -->
+		<script src="assets/js/plugins.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
