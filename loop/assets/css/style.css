@@ -1340,7 +1340,7 @@ body {
 
 .text-color-white,
 .text-color-white:before {
-    color: #FFE41A !important;
+    color: #fff !important;
     ;
 }
 
@@ -1382,7 +1382,7 @@ body {
 
 .text-color-black,
 .text-color-black:before {
-    color: #02B5DF !important;
+    color: #000 !important;
     ;
 }
 
@@ -1425,13 +1425,13 @@ body {
 .text-stroke-white {
     color: transparent;
     -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: #FFE41A;
+    -webkit-text-stroke-color: #fff;
 }
 
 .text-stroke-black {
     color: transparent;
     -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: #02B5DF;
+    -webkit-text-stroke-color: #000;
 }
 
 .text-color-mix-blend {
@@ -1449,11 +1449,11 @@ body {
 }
 
 .text-hover-to-white:hover {
-    color: #FFE41A !important;
+    color: #fff !important;
 }
 
 .text-hover-to-black:hover {
-    color: #02B5DF !important;
+    color: #000 !important;
 }
 
 
@@ -5549,7 +5549,7 @@ body .content-bg-dark .anim-img-reveal:before {
 }
 
 .anim-stroke-fill-white {
-    -webkit-text-stroke-color: #FFE41A;
+    -webkit-text-stroke-color: #fff;
 }
 
 .anim-stroke-fill-black {
@@ -5571,7 +5571,7 @@ body .content-bg-dark .anim-img-reveal:before {
 }
 
 .anim-stroke-fill-white:before {
-    color: #FFE41A;
+    color: #fff;
 }
 
 .anim-stroke-fill-black:before {
