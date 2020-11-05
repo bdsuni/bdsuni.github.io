@@ -7,7 +7,6 @@
 
 .tiles--fixed {
 	--tiles-height: 65vw;
-	margin-top: 25vh;
 }
 
 .tiles--perspective {
