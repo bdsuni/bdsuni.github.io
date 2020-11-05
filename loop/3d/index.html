@@ -1,87 +1,31 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> 3D </title>
+  <meta charset="UTF-8">
+  <title>3D</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/foundation/6.2.0/foundation.min.css'><link rel="stylesheet" href="./style.css">
+
 </head>
-
 <body>
-    <style>
-        body{
-            min-height: 1200vh;
-        }
-        .animated {
-            display: none;
-        }
-
-        .show {
-            display: block;
-            max-width: 100vw;
-        }
-
-        #container {
-            position: fixed;
-            top: 0;
-            left: 0;
-        }
-
-    </style>
-
-    <div style="height:200px"></div>
-    <div id="container">
-        <img src="png/3D_100.png" class="animated show" />
+<!-- partial:index.partial.html -->
+<div class="tb">
+    
+    <div class="button" onclick="api.prevFrame();">&larr;</div>
+    <div class="container">
+        <div id="basic-setup"></div>
     </div>
 
+    <div class="button" onclick="api.prevFrame();">&rarr;</div>
+</div>
+<div>
+    <p>
+        <strong>DRAG IMAGE LEFT/RIGHT </strong>
+        <img src="http://www.calvanishoes.com/themes/PRS060148/img/icon/360-icon.png" width="60" />
+    </p>
+</div>
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script><script  src="./script.js"></script>
+
 </body>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-<script>
-    
-    var imgcontainer = $('#container');
-    for (let i = 101 ; i < 140 ; i++){
-        imgcontainer.append(`<img src="png/3D_`+ i +`.png" class="animated" />`);
-    }
-    
-    function animationTimer() {
-        canChange = true;
-    }
-
-
-    var container = $('#container'),
-        nImg = 0,
-        imgNum = $('#container img').length,
-        topDiv = (container.offset() || {
-            "top": NaN
-        }).top,
-        canChange = true;
-
-    $(window).bind('scroll', function() {
-        if (canChange) {
-            canChange = false;
-            setTimeout(animationTimer, 250);
-            var y = $(this).scrollTop();
-            if (y > topDiv) {
-                nImg++;
-            } else {
-                nImg--;
-            }
-            if (nImg >= imgNum) {
-                nImg = 0;
-            }
-            if (nImg < 0) {
-                nImg = imgNum - 1;
-            }
-
-            $(".animated").each(function() {
-                $(this).removeClass("show")
-            });
-            $(".animated").eq(nImg).addClass("show");
-        }
-
-    });
-
-</script>
-
 </html>
