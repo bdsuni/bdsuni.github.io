@@ -1340,7 +1340,7 @@ body {
 
 .text-color-white,
 .text-color-white:before {
-    color: #fff !important;
+    color: #FFE41A !important;
     ;
 }
 
@@ -1425,7 +1425,7 @@ body {
 .text-stroke-white {
     color: transparent;
     -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-color: #FFE41A;
 }
 
 .text-stroke-black {
@@ -1449,7 +1449,7 @@ body {
 }
 
 .text-hover-to-white:hover {
-    color: #fff !important;
+    color: #FFE41A !important;
 }
 
 .text-hover-to-black:hover {
@@ -5549,7 +5549,7 @@ body .content-bg-dark .anim-img-reveal:before {
 }
 
 .anim-stroke-fill-white {
-    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-color: #FFE41A;
 }
 
 .anim-stroke-fill-black {
@@ -5571,7 +5571,7 @@ body .content-bg-dark .anim-img-reveal:before {
 }
 
 .anim-stroke-fill-white:before {
-    color: #fff;
+    color: #FFE41A;
 }
 
 .anim-stroke-fill-black:before {
