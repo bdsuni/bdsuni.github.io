@@ -4018,7 +4018,7 @@ button.mfp-close {
     color: #000;
 }
 
-.border-btn__inner:hover{
+.border-btn__inner:hover {
     color: #FBE519;
 }
 
@@ -6823,75 +6823,121 @@ textarea.form-input {
    36. SVG
    ========================================================================== */
 
-
-
-
 .st0 {
+    opacity: 0.8;
+}
+
+.st1 {
     clip-path: url(#SVGID_2_);
     fill: url(#SVGID_3_);
 }
 
-.st1 {
+.st2 {
     clip-path: url(#SVGID_5_);
     fill: url(#SVGID_6_);
 }
 
-.st2 {
+.st3 {
     clip-path: url(#SVGID_8_);
     fill: url(#SVGID_9_);
 }
 
-.st3 {
+.st4 {
     clip-path: url(#SVGID_11_);
     fill: url(#SVGID_12_);
 }
 
-.st4 {
-    clip-path: url(#SVGID_14_);
-    fill: url(#SVGID_15_);
-}
-
 .st5 {
-    fill: #41B4E1;
+    clip-path: url(#SVGID_11_);
+    fill: url(#SVGID_13_);
 }
 
 .st6 {
+    clip-path: url(#SVGID_15_);
     fill: url(#SVGID_16_);
 }
 
 .st7 {
+    clip-path: url(#SVGID_15_);
     fill: url(#SVGID_17_);
 }
 
 .st8 {
+    clip-path: url(#SVGID_15_);
     fill: url(#SVGID_18_);
 }
 
 .st9 {
-    fill: url(#SVGID_19_);
+    fill: #FFFFFF;
 }
 
 .st10 {
-    fill: url(#SVGID_20_);
+    fill: #41B4E1;
 }
 
 .st11 {
-    fill: url(#SVGID_21_);
+    fill: url(#SVGID_19_);
 }
 
 .st12 {
-    fill: #fff;
-    font-size: 480px
+    fill: url(#SVGID_20_);
 }
+
+.st13 {
+    fill: url(#SVGID_21_);
+}
+
+.st14 {
+    font-family: inherit;
+}
+
+.st15 {
+    font-size: 28px;
+}
+
+.st16 {
+    font-size: 20px;
+}
+
+.st17 {
+    fill: url(#SVGID_22_);
+}
+
+.st18 {
+    fill: url(#SVGID_23_);
+}
+
+.st19 {
+    fill: url(#SVGID_24_);
+}
+
+
+
+
 
 .tt-text {
-    visibility: hidden;
-    transition: visibility 0.5s ease-in-out;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
-.handle-circle:hover ~ #handle,
-.switch-circle:hover ~ #switch,
-.tyre-circle:hover ~ #tyre {
-    visibility: visible;
-    transition: visibility 0.5s ease-in-out;
+#handle-circle:hover ~ #handle,
+#switch-circle:hover ~ #switch,
+#tyre-circle:hover ~ #tyre,
+#disc-circle:hover ~ #disc,
+#bar-circle:hover ~ #bar,
+#deck-circle:hover ~ #deck,
+#handle:hover,
+#switch:hover,
+#tyre:hover,
+#disc:hover,
+#bar:hover,
+#deck:hover{
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 999px) {
+    .tt-text {
+        opacity: 1;
+    }
 }
