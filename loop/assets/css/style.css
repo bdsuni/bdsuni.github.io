@@ -1382,7 +1382,7 @@ body {
 
 .text-color-black,
 .text-color-black:before {
-    color: #000 !important;
+    color: #02B5DF !important;
     ;
 }
 
@@ -1431,11 +1431,11 @@ body {
 .text-stroke-black {
     color: transparent;
     -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-color: #02B5DF;
 }
 
 .text-color-mix-blend {
-    color: #fff;
+    color: #E43E17;
     mix-blend-mode: difference;
 }
 
@@ -1453,7 +1453,7 @@ body {
 }
 
 .text-hover-to-black:hover {
-    color: #000 !important;
+    color: #02B5DF !important;
 }
 
 
