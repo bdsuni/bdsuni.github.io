@@ -3519,6 +3519,24 @@ button.mfp-close {
 }
 
 
+.app-pagination .swiper-pagination-bullet{
+    width: 100%;
+    height: 100%;
+}
+
+.app-pagination .swiper-pagination-bullet:before,
+.app-pagination .swiper-pagination-bullet:after {
+    display: none;
+}
+
+.app-pagination .swiper-pagination-bullet,
+.app-pagination .swiper-pagination-bullet:first-child,
+.app-pagination .swiper-pagination-bullet:last-child {
+    margin-right: 0 !important;
+    margin: 0 !important;
+}
+
+
 /* 14.2.1. Counter pagination vertical
    ========================================================================== */
 
@@ -6969,4 +6987,13 @@ textarea.form-input {
     .tt-text {
         opacity: 1;
     }
+}
+
+.app-label {
+    transition: all 0.3s ease;
+    font-size: 38px;
+}
+.app-label:hover {
+    transition: all 0.3s ease;
+    font-size: 42px;
 }
