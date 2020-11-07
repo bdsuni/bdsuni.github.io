@@ -5848,7 +5848,7 @@ body .content-bg-dark .anim-img-reveal:before {
    ========================================================================== */
 
 .hover-stroke-fill-white,
-.hover-stroke-fill-black {
+.hover-stroke-fill-blue {
     display: inline-block;
     position: relative;
     white-space: nowrap;
@@ -5860,12 +5860,13 @@ body .content-bg-dark .anim-img-reveal:before {
     -webkit-text-stroke-color: #fff;
 }
 
-.hover-stroke-fill-black {
-    -webkit-text-stroke-color: #000;
+.hover-stroke-fill-blue {
+    -webkit-text-stroke-color: #02B5DF;
+    color: #02b5df60;
 }
 
 .hover-stroke-fill-white:before,
-.hover-stroke-fill-black:before {
+.hover-stroke-fill-blue:before {
     content: attr(data-text);
     overflow: hidden;
     width: 0%;
@@ -5879,7 +5880,7 @@ body .content-bg-dark .anim-img-reveal:before {
 }
 
 body .hover-stroke-fill-white:before,
-body .hover-stroke-fill-black:before {
+body .hover-stroke-fill-blue:before {
     transition-delay: 0s !important;
 }
 
@@ -5887,14 +5888,14 @@ body .hover-stroke-fill-black:before {
     color: #fff;
 }
 
-.hover-stroke-fill-black:before {
-    color: #000;
+.hover-stroke-fill-blue:before {
+    color: #02B5DF;
 }
 
 .hover-box:hover .hover-stroke-fill-white:before,
 .hover-stroke-fill-white:hover:before,
-.hover-box:hover .hover-stroke-fill-black:before,
-.hover-stroke-fill-black:hover:before {
+.hover-box:hover .hover-stroke-fill-blue:before,
+.hover-stroke-fill-blue:hover:before {
     width: 100%;
 }
 
