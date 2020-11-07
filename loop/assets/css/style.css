@@ -6998,3 +6998,17 @@ textarea.form-input {
     transition: all 0.3s ease;
     font-size: 42px;
 }
+.app-slider:before {
+        content: '';
+    background: url(../images/app/ip12.png);
+    width: 363px;
+    height: 783px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 3;
+}
+.app-slider img {
+    width: 363px;
+    height: 783px;
+}
