@@ -124,11 +124,6 @@ $(function () {
             var homeSwiper = new Swiper('.js-home-slider', {
                 speed: 1300,
                 watchSlidesProgress: true,
-                pagination: {
-                    el: '.swiper-pagination',
-                    type: 'bullets',
-                    clickable: true
-                },
                 navigation: {
                     nextEl: ".swiper-button-next",
                     prevEl: ".swiper-button-prev"
