@@ -1422,6 +1422,10 @@ body {
     ;
 }
 
+.text-color-blue {
+    color: #0d9abb;
+}
+
 .text-stroke-blue {
     color: #02B5DF60;
     -webkit-text-stroke: 1px;
@@ -5481,6 +5485,10 @@ body .content-bg-light .anim-video-reveal:before {
 .section-bg-dark .anim-video-reveal:before,
 body .content-bg-dark .anim-video-reveal:before {
     background-color: var(--bg-dark);
+}
+
+.section-bg-blue {
+    background-color: #00354e;
 }
 
 
