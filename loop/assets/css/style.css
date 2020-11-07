@@ -1334,6 +1334,12 @@ body {
     background-color: var(--bg-dark);
 }
 
+.section-bg-blue,
+.content-bg-blue,
+.text-bg-blue{
+    background-color: #00354e;
+}
+
 
 /* 6.2. Text colors
    ========================================================================== */
@@ -3554,8 +3560,10 @@ button.mfp-close {
 
 /* Carousel slider */
 .js-carousel-slider-bg {
+/*
     width: 364px;
     height: 100vh;
+*/
     margin-left: calc(50vw - 182px);
     position: relative;
     pointer-events: none;
@@ -3565,6 +3573,7 @@ button.mfp-close {
     pointer-events: none;
 }
 
+/*
 .js-carousel-slider-bg:after {
     content: '';
     width: 364px;
@@ -3577,6 +3586,7 @@ button.mfp-close {
     background-position: center;
     z-index: 2;
 }
+*/
 
 /*
 .js-carousel-slider-bg:before,
@@ -5487,10 +5497,6 @@ body .content-bg-dark .anim-video-reveal:before {
     background-color: var(--bg-dark);
 }
 
-.section-bg-blue {
-    background-color: #00354e;
-}
-
 
 .js-page-in-anim-active .after-preloader-anim.anim-video-reveal:before,
 .js-page-in-anim-active .after-preloader-anim .anim-video-reveal:before,
@@ -5848,6 +5854,7 @@ body .content-bg-dark .anim-img-reveal:before {
    ========================================================================== */
 
 .hover-stroke-fill-white,
+.hover-stroke-fill-black,
 .hover-stroke-fill-blue {
     display: inline-block;
     position: relative;
@@ -5860,13 +5867,19 @@ body .content-bg-dark .anim-img-reveal:before {
     -webkit-text-stroke-color: #fff;
 }
 
+.hover-stroke-fill-black {
+    -webkit-text-stroke-color: #000;
+}
+
 .hover-stroke-fill-blue {
-    -webkit-text-stroke-color: #02B5DF;
-    color: #02b5df60;
+    -webkit-text-stroke-color: #02b5df;
+    color: #02b5df70;
+    
 }
 
 .hover-stroke-fill-white:before,
-.hover-stroke-fill-blue:before {
+.hover-stroke-fill-blue:before,
+.hover-stroke-fill-black:before {
     content: attr(data-text);
     overflow: hidden;
     width: 0%;
@@ -5880,7 +5893,8 @@ body .content-bg-dark .anim-img-reveal:before {
 }
 
 body .hover-stroke-fill-white:before,
-body .hover-stroke-fill-blue:before {
+body .hover-stroke-fill-blue:before,
+body .hover-stroke-fill-black:before {
     transition-delay: 0s !important;
 }
 
@@ -5888,14 +5902,20 @@ body .hover-stroke-fill-blue:before {
     color: #fff;
 }
 
-.hover-stroke-fill-blue:before {
-    color: #02B5DF;
+.hover-stroke-fill-black:before {
+    color: #000;
 }
 
+.hover-stroke-fill-blue:before {
+    color: #00354e;
+}
+
+.hover-box:hover .hover-stroke-fill-blue:before,
+.hover-stroke-fill-blue:hover:before,
 .hover-box:hover .hover-stroke-fill-white:before,
 .hover-stroke-fill-white:hover:before,
-.hover-box:hover .hover-stroke-fill-blue:before,
-.hover-stroke-fill-blue:hover:before {
+.hover-box:hover .hover-stroke-fill-black:before,
+.hover-stroke-fill-black:hover:before {
     width: 100%;
 }
 
