@@ -1,0 +1,33 @@
+html, body {
+	margin:0;
+	padding:0; 
+	background: #42b5e1;
+}
+
+
+#credits {
+    font-size: 13px;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    color: #d7c9ad;
+    font-family: arial;
+}
+
+#credits a{
+  color: #d7c9ad;
+  text-decoration:none;
+  display:inline-block;
+  border-bottom:2px solid #d7c9ad;
+  padding-bottom:2px;
+}
+
+#credits a:hover{
+  border-bottom-width:4px;
+  padding-bottom: 0;
+}
+
+#content{
+  text-align:center;
+}
