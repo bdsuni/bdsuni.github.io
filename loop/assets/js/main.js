@@ -122,6 +122,9 @@ $(function () {
             var interleaveOffset = 0.5;
 
             var homeSwiper = new Swiper('.js-home-slider', {
+                autoplay: { 
+                    delay: 4500,
+                },
                 speed: 1300,
                 watchSlidesProgress: true,
                 navigation: {
@@ -333,7 +336,6 @@ $(function () {
             });
 
             var appSwiper = new Swiper('.app-slider', {
-                direction: 'vertical',
                 pagination: {
                     el: '.app-pagination',
                     clickable: true,
@@ -341,20 +343,17 @@ $(function () {
                         switch (index){
                             case 0:
                                 return `<div class="find ` + className + `">
-                                                    <div class="subhead-xs text-color-black">01</div>
-                                                    <h3 class="headline-xs text-color-blue app-label">Find</h3>
+                                                    <h3 class="text-color-blue app-label">Find</h3>
                                                     <p class="body-text-s text-color-black margin-top-10 max-width-400">In a hurry just find a Loop near by you.</p>
                                                 </div>`
                             case 1:
                                 return `<div class="scan ` + className + `">
-                                                    <div class="subhead-xs text-color-black">02</div>
-                                                    <h3 class="headline-xs text-color-blue app-label">Scan</h3>
+                                                    <h3 class="text-color-blue app-label margin-top-60">Scan</h3>
                                                     <p class="body-text-s text-color-black margin-top-10 max-width-400">Scan the Loop Scooter with your mobile or type in your code to activate.</p>
                                                 </div>`;
                             case 2:
                                 return `<div class="ride ` + className + `">
-                                                    <div class="subhead-xs text-color-black">03</div>
-                                                    <h3 class="headline-xs text-color-blue app-label">Ride</h3>
+                                                    <h3 class="text-color-blue app-label margin-top-60">Ride</h3>
                                                     <p class="body-text-s text-color-black margin-top-10 max-width-400">Fasten your helmet, hop on your scooter and start your journey.</p>
                                                 </div>`;
                             default:

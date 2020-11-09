@@ -1905,7 +1905,7 @@ body.js-page-in-anim-active.js-page-out .pointer {
     z-index: 10;
     pointer-events: none;
     cursor: pointer;
-    mix-blend-mode: difference;
+/*    mix-blend-mode: difference;*/
 }
 
 .color-mix-blend-normal.menu-icon {
@@ -2060,7 +2060,7 @@ body.js-page-in-anim-active.js-page-out .pointer {
     left: 100%;
     top: 0;
     z-index: 9;
-    background-color: #111517;
+    background-color: #02b5df;
     transition: 1s cubic-bezier(.858, .01, .068, .99);
     transition-delay: .7s;
 }
@@ -2772,7 +2772,7 @@ body.js-page-in-anim-active.js-page-out .pointer {
     top: 50%;
     left: 50%;
     z-index: -1;
-    background-color: #111517;
+    background-color: #02b5df;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     transition: .7s cubic-bezier(.858, .01, .068, .99);
@@ -6180,6 +6180,7 @@ input[type='submit']:hover {
     letter-spacing: 1px;
     line-height: normal;
     color: #fff;
+    background: none;
 }
 
 .form-input.black {
@@ -7019,11 +7020,11 @@ textarea.form-input {
 
 .app-label {
     transition: all 0.3s ease;
-    font-size: 38px;
+    font-size: 58px;
 }
 .app-label:hover {
     transition: all 0.3s ease;
-    font-size: 42px;
+    font-size: 64px;
 }
 .app-slider:before {
         content: '';

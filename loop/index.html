@@ -306,8 +306,8 @@
                                             <div class="six-columns">
                                                 <div class="app-pagination"></div>
                                             </div>
-                                            <div class="six-columns">
-                                                <div class="lopp-app" style="max-height: 50vh; min-height: 400px;">
+                                            <div class="six-columns" style="width: 75vw;overflow-x: hidden;overflow-y: hidden;">
+                                                <div class="lopp-app">
                                                     <div class="app-slider">
                                                         <!-- swiper-wrapper start -->
                                                         <div class="swiper-wrapper" data-scroll>
@@ -786,7 +786,7 @@
                         <section class="padding-top-bottom-120">
                             <!-- title start -->
                             <div class="container small">
-                                <h2 class="headline-xxxl text-color-blue anim-split-lines" data-scroll data-scroll-offset="20%">News &amp; Updates</h2>
+                                <h2 class="headline-xxxl text-color-blue anim-split-lines text-center" data-scroll data-scroll-offset="20%">News &amp; Updates</h2>
                             </div><!-- title end -->
 
                             <!-- container start -->
@@ -938,6 +938,19 @@
                                             <!-- column start -->
                                             <div class="twelve-columns padding-top-30">
                                                 <div class="column-l-r-margin-10 pos-rel">
+                                                    <select name="subject" id="subject" required class="form-input js-pointer-small">
+                                                        <option value="support">Technical Support</option>
+                                                        <option value="partnership">Partnership with loop</option>
+                                                        <option value="request">Requesting Loop</option>
+                                                    </select>
+                                                    <label for="subject" class="form-label tr-delay-03" data-text="Subject">Subject</label>
+                                                    <div class="anim-line-bottom tr-delay-03"></div>
+                                                </div>
+                                            </div><!-- column end -->
+
+                                            <!-- column start -->
+                                            <div class="twelve-columns padding-top-30">
+                                                <div class="column-l-r-margin-10 pos-rel">
                                                     <textarea name="message" id="message" required class="form-input js-pointer-small"></textarea>
                                                     <label for="message" class="form-label tr-delay-03" data-text="Message content">Message content</label>
                                                     <div class="anim-line-bottom tr-delay-03"></div>
@@ -1075,7 +1088,7 @@
                                 <!-- column start -->
                                 <div class="two-columns padding-top-bottom-60">
                                     <div class="column-l-r-margin-10">
-                                        <img src="assets/images/app/qrcode.png" alt="QR" style="background: #fff; height: 162px; width: auto;">
+                                        <img src="assets/images/app/qrcode.png" alt="QR" style="background: #fff; height: 128px; width: auto;">
                                     </div>
                                 </div><!-- column end -->
 
@@ -1083,10 +1096,11 @@
                                 <div class="four-columns padding-top-bottom-60">
                                     <div class="column-l-r-margin-10">
                                         <a href="https://apps.apple.com/in/app/loop-dreams-on-wheels/id1504675606">
-                                            <img src="assets/images/app/app-en.png" alt="App" style="height: 80px;width: auto;">
+                                            <img src="assets/images/app/app-en.png" alt="App" style="height: 65px;width: auto;">
                                         </a>
+                                        <br>
                                         <a href="https://play.google.com/store/apps/details?id=com.Loop.app">
-                                            <img src="assets/images/app/play-en.png" alt="Play" style="height: 80px;width: auto;">
+                                            <img src="assets/images/app/play-en.png" alt="Play" style="height: 65px;width: auto;">
                                         </a>
                                     </div>
                                 </div><!-- column end -->
@@ -1098,39 +1112,39 @@
                             <img src="assets/images/app/ipx.png" alt="scooter" class="max-width-300">
                         </div><!-- column end -->
                         <!-- column start -->
-                                <div class="twelve-columns">
-                                    <div class="column-l-r-margin-10 padding-top-30 pos-rel">
-                                        <div class="anim-line-top" data-scroll data-scroll-offset="5%"></div>
-                                        <!-- footer-social start -->
-                                        <ul class="list list_row list_margin-30px">
-                                            <li class="list__item">
-                                                <a href="https://www.facebook.com/LoopMobility" class="flip-btn js-pointer-small" data-splitting>Facebook</a>
-                                            </li>
-                                            <li class="list__item">
-                                                <a href="https://www.linkedin.com/company/loop-mobility/" class="flip-btn js-pointer-small" data-splitting>LinkedIn</a>
-                                            </li>
-                                            <li class="list__item">
-                                                <a href="https://www.instagram.com/loopmobility/" class="flip-btn js-pointer-small" data-splitting>Instagram</a>
-                                            </li>
-                                            <li class="list__item">
-                                                <a href="https://twitter.com/loopmobility" class="flip-btn js-pointer-small" data-splitting>Twitter</a>
-                                            </li>
-                                        </ul><!-- footer-social end -->
-                                    </div>
-                                </div><!-- column end -->
+                        <div class="twelve-columns">
+                            <div class="column-l-r-margin-10 padding-top-30 pos-rel">
+                                <div class="anim-line-top" data-scroll data-scroll-offset="5%"></div>
+                                <!-- footer-social start -->
+                                <ul class="list list_row list_margin-30px">
+                                    <li class="list__item">
+                                        <a href="https://www.facebook.com/LoopMobility" class="flip-btn js-pointer-small" data-splitting>Facebook</a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a href="https://www.linkedin.com/company/loop-mobility/" class="flip-btn js-pointer-small" data-splitting>LinkedIn</a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a href="https://www.instagram.com/loopmobility/" class="flip-btn js-pointer-small" data-splitting>Instagram</a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a href="https://twitter.com/loopmobility" class="flip-btn js-pointer-small" data-splitting>Twitter</a>
+                                    </li>
+                                </ul><!-- footer-social end -->
+                            </div>
+                        </div><!-- column end -->
 
-                                <!-- column start -->
-                                <div class="twelve-columns padding-top-120">
-                                    <div class="column-l-r-margin-10 pos-rel">
-                                        <p class="copyright margin-right-30 body-text-xs-b">
-                                            &copy; Copyright 2020 Loop Mobility. A beautevil.design
-                                        </p>
-                                        <!-- to top btn start -->
-                                        <a href="#up" class="scroll-to-btn js-pointer-large" data-scroll data-scroll-repeat data-scroll-to>
-                                            <span class="scroll-to-btn__arrow"></span>
-                                        </a><!-- to top btn end -->
-                                    </div>
-                                </div><!-- column end -->
+                        <!-- column start -->
+                        <div class="twelve-columns padding-top-120">
+                            <div class="column-l-r-margin-10 pos-rel">
+                                <p class="copyright margin-right-30 body-text-xs-b">
+                                    &copy; Copyright 2020 Loop Mobility. A beautevil.design
+                                </p>
+                                <!-- to top btn start -->
+                                <a href="#up" class="scroll-to-btn js-pointer-large" data-scroll data-scroll-repeat data-scroll-to>
+                                    <span class="scroll-to-btn__arrow"></span>
+                                </a><!-- to top btn end -->
+                            </div>
+                        </div><!-- column end -->
                     </div><!-- flex-container end -->
                 </div><!-- container end -->
             </footer><!-- footer end -->
