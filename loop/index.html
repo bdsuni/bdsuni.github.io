@@ -79,7 +79,7 @@
             <ul class="menu-box nav-bg-overlay-box">
                 <!-- nav-btn-box start -->
                 <li class="nav-btn-box js-nav-bg-change js-nav-bg-active">
-                    <a href="index.html" class="nav-btn dropdown-hidden-btn js-animsition-link js-pointer-large">
+                    <a href="#up" class="nav-btn dropdown-hidden-btn js-menu-open-close js-pointer-large">
                         <span class="nav-btn__inner" data-text="Home">Home</span>
                     </a>
                     <div class="nav-bg-box">
@@ -89,7 +89,7 @@
 
                 <!-- nav-btn-box start -->
                 <li class="nav-btn-box js-nav-bg-change">
-                    <a href="#.html" class="nav-btn dropdown-hidden-btn js-animsition-link js-pointer-large">
+                    <a href="#who" class="nav-btn dropdown-hidden-btn js-menu-open-close js-pointer-large">
                         <span class="nav-btn__inner" data-text="About">About</span>
                     </a>
                     <div class="nav-bg-box">
@@ -113,7 +113,7 @@
 
                 <!-- nav-btn-box start -->
                 <li class="nav-btn-box js-nav-bg-change">
-                    <a href="#.html" class="nav-btn dropdown-hidden-btn js-animsition-link js-pointer-large">
+                    <a href="#news" class="nav-btn dropdown-hidden-btn js-menu-open-close js-pointer-large">
                         <span class="nav-btn__inner" data-text="News">News</span>
                     </a>
                     <div class="nav-bg-box">
@@ -123,7 +123,7 @@
 
                 <!-- nav-btn-box start -->
                 <li class="nav-btn-box js-nav-bg-change">
-                    <a href="#.html" class="nav-btn dropdown-hidden-btn js-animsition-link js-pointer-large">
+                    <a href="#contact" class="nav-btn dropdown-hidden-btn js-menu-open-close js-pointer-large">
                         <span class="nav-btn__inner" data-text="Contact">Contact</span>
                     </a>
                     <div class="nav-bg-box">
@@ -243,7 +243,7 @@
                         <div class="flex-container flex-align-center padding-top-60">
 
                             <!-- column start -->
-                            <div class="five-columns padding-top-30">
+                            <div class="five-columns padding-top-30 no-phone">
                                 <div class="hidden-box">
                                     <div data-scroll data-scroll-speed="-1.2">
                                         <div class="anim-img-reveal" data-scroll data-scroll-offset="10%" style="background-image:url(assets/images/app/dl.jpg)">
@@ -267,8 +267,13 @@
                                     </div>
                                 </div>
                                 <div class="padding-left-30 scrollanim-activate">
+                                    <div data-scroll class="only-phone">
+                                        <div class="anim-img-reveal badge" data-scroll data-scroll-offset="20%" style="background-image:url(assets/images/app/dl.jpg)">
+                                            <img src="assets/images/app/dl.jpg" alt="DL">
+                                        </div>
+                                    </div>
                                     <div data-scroll>
-                                        <div class="anim-img-reveal badge" data-scroll data-scroll-offset="30%" style="background-image:url(assets/images/app/qrcode.png)">
+                                        <div class="anim-img-reveal badge" data-scroll data-scroll-offset="20%" style="background-image:url(assets/images/app/qrcode.png)">
                                             <img src="assets/images/app/qrcode.png" alt="App">
                                         </div>
                                     </div>
@@ -281,7 +286,7 @@
                                     </div>
                                     <div data-scroll>
                                         <a href="https://play.google.com/store/apps/details?id=com.Loop.app" class="js-pointer-large">
-                                            <div class="anim-img-reveal badge" data-scroll data-scroll-offset="40%" style="background-image:url(assets/images/app/play-en.png)">
+                                            <div class="anim-img-reveal badge" data-scroll data-scroll-offset="30%" style="background-image:url(assets/images/app/play-en.png)">
                                                 <img src="assets/images/app/play-en.png" alt="Play">
                                             </div>
                                         </a>
@@ -456,7 +461,7 @@
 
 
                 <!-- about us start -->
-                <div class="section-bg-blue" data-scroll-section>
+                <div class="section-bg-blue" data-scroll-section id="who">
                     <!-- padding-top-30 start -->
                     <div class="padding-top-30 padding-bottom-120">
                         <!-- flex-container start -->
@@ -787,7 +792,7 @@
                         </section><!-- marquee end -->
 
                         <!-- blog start -->
-                        <section class="padding-top-bottom-120">
+                        <section class="padding-top-bottom-120" id="news">
                             <!-- title start -->
                             <div class="container small">
                                 <h2 class="headline-xxxl text-color-blue anim-split-lines text-center" data-scroll data-scroll-offset="20%">News &amp; Updates</h2>
@@ -888,7 +893,7 @@
 
 
                 <!-- form section start -->
-                <section class="pos-rel hidden-box" data-scroll-section>
+                <section class="pos-rel hidden-box" data-scroll-section id="contact">
                     <!-- bg-parallax -->
                     <div class="bg-parallax" style="background-image:url(assets/images/backgrounds/touch.jpg)" data-scroll data-scroll-speed="-1.5"></div>
 
