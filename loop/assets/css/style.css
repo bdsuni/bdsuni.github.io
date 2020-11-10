@@ -7041,10 +7041,14 @@ textarea.form-input {
     height: 783px;
 }
 
-font-weight-700{
+.font-weight-700{
     font-weight: 700;    
 }
 
-font-weight-500{
+.font-weight-500{
     font-weight: 500;    
+}
+
+.hidden{
+     display: none;
 }

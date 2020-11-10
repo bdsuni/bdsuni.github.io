@@ -79,6 +79,11 @@ $(function () {
     });
 
     $(document).ready(function () {
+        $("#who-we-read").click(function () {
+            $("#who-we-more").toggleClass("hidden");
+            $("#who-more").toggleClass("hidden");
+            $("#who-less").toggleClass("hidden");
+        });
 
         /* 2. Animsition preloader */
         $(".js-animsition-overlay").animsition({
@@ -122,7 +127,7 @@ $(function () {
             var interleaveOffset = 0.5;
 
             var homeSwiper = new Swiper('.js-home-slider', {
-                autoplay: { 
+                autoplay: {
                     delay: 4500,
                 },
                 speed: 1300,
@@ -340,7 +345,7 @@ $(function () {
                     el: '.app-pagination',
                     clickable: true,
                     renderBullet: function (index, className) {
-                        switch (index){
+                        switch (index) {
                             case 0:
                                 return `<div class="find ` + className + `">
                                                     <h3 class="text-color-blue app-label">Find</h3>
