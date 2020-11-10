@@ -7080,6 +7080,9 @@ textarea.form-input {
     .margin-top-120{
         margin-top: 0;
     }
+    .margin-top-60{
+        margin-top: 10px;
+    }
     .body-text-m {
         max-width: 80vw;
         margin-left: 10vw;
@@ -7089,7 +7092,22 @@ textarea.form-input {
         margin-left: 10vw;
         text-align: center;
     }
+    .headline-xxxl{
+        font-size: 38px;
+        margin-bottom: 20px;
+    }
+    
     .headline-xxxxs{
         margin-left: 20px;
+    }
+    .lopp-app{
+        transform: scale(0.7);
+        margin-top: -80px;
+    }
+    .app-label{
+        font-size: 22px;
+    }
+    .app-label:hover{
+        font-size: 24px;
     }
 }
