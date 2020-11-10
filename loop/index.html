@@ -241,15 +241,15 @@
                     <div class="container padding-top-60 padding-bottom-150">
                         <!-- flex-container start -->
                         <div class="flex-container flex-align-center padding-top-60 only-f-phone">
-                           <div class="padding-top-30 text-color-blue" data-scroll data-scroll-speed="1">
-                                    <div class="d-inline-block">
-                                        <div class="scrollanim-activate" data-scroll data-scroll-offset="20%">
-                                            <div class="hidden-box text-left-offset">
-                                                <h2 class="headline-xl anim-text-slide">How to Ride</h2>
-                                                <p class="body-text-m max-width-400 d-inline-block anim-split-lines text-color-black phone-no-m-p" data-scroll data-scroll-offset="20%">Download Loop app from App Store or Play store</p>
-                                            </div>
+                            <div class="padding-top-30 text-color-blue" data-scroll data-scroll-speed="1">
+                                <div class="d-inline-block">
+                                    <div class="scrollanim-activate" data-scroll data-scroll-offset="20%">
+                                        <div class="hidden-box text-left-offset">
+                                            <h2 class="headline-xl anim-text-slide">How to Ride</h2>
+                                            <p class="body-text-m max-width-400 d-inline-block anim-split-lines text-color-black phone-no-m-p" data-scroll data-scroll-offset="20%">Download Loop app from App Store or Play store</p>
                                         </div>
                                     </div>
+                                </div>
                             </div>
                             <div class="two-columns padding-top-204 phone-fb-50">
                                 <img src="assets/images/app/dl.jpg" alt="scooter">
@@ -516,22 +516,47 @@
 
 
                 <section id="map" class="section-bg-light" data-scroll-section>
-                    <div class="flex-min-height-70vh map-bg">
-
-<!--
-                        <div class="js-parallax-slide-bg">
-                            <div class="bg-img-cover height-100perc" style="background-image: url(assets/images/backgrounds/map/map.jpg);" data-scroll></div>
-                        </div>
--->
-
+                    <div class="flex-min-height-70vh">
                         <!-- flex-container start -->
                         <div class="container flex-container flex-align-center padding-top-60 padding-bottom-150">
                             <!-- column start -->
-                            <div class="eight-columns column-100-999 padding-top-90">
+                            <div class="eight-columns column-100-999 padding-top-90" style="position: relative">
+                                <div class="int-map">
+                                    <?xml version="1.0" encoding="utf-8"?>
+                                    <!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2560 1479" style="enable-background:new 0 0 2560 1479;" xml:space="preserve">
+                                        <g id="Group_1_1_">
+                                            <g id="map_xA0_Image_1_">
+                                                <image style="overflow:visible;" width="2560" height="1479" id="map_xA0_Image" xlink:href="assets/images/backgrounds/map/map.jpg">
+                                                </image>
+                                            </g>
+                                            <g id="pin1">
+
+                                                <image style="overflow:visible;" width="132" height="154" id="icon_xA0_Image" xlink:href="assets/images/backgrounds/map/pin.png" transform="matrix(1 0 0 1 1188 824)">
+                                                </image>
+                                            </g>
+                                            <text transform="matrix(1 0 0 1 1290.3311 851.127)" class="map-label" id="label1">Legatifiya</text>
+                                            <g id="pin2">
+
+                                                <image style="overflow:visible;" width="132" height="154" id="icon_copy_xA0_Image" xlink:href="assets/images/backgrounds/map/pin.png" transform="matrix(1 0 0 1 1101 860)">
+                                                </image>
+                                            </g>
+                                            <text transform="matrix(1 0 0 1 1155.7231 1012.2148)" class="map-label" id="label2">Westbay</text>
+                                            <g id="pin3">
+
+                                                <image style="overflow:visible;" width="132" height="154" id="icon_copy_2_xA0_Image" xlink:href="assets/images/backgrounds/map/pin.png" transform="matrix(1 0 0 1 1010 864)">
+                                                </image>
+                                            </g>
+                                            <text transform="matrix(1 0 0 1 840.168 866.5742)" class="map-label" id="label3">Al Corniche</text>
+
+                                        </g>
+                                    </svg>
+
+                                </div>
                                 <!-- title start -->
                                 <h2 class="padding-bottom-90 d-inline-block">
                                     <div class="d-inline-block headline-xl headline-uppercase hover-stroke-fill-blue js-pointer-large" data-text="Operating ">Operating&nbsp;</div>
-                                    
+
                                     <div class="d-inline-block headline-xl headline-uppercase hover-stroke-fill-blue js-pointer-large" data-text="Cities">Cities</div>
                                 </h2><!-- title end -->
                                 <p class="body-text-m text-color-black">Now operating in Al Corniche, Legatifiya and Westbay</p>
@@ -1220,6 +1245,28 @@
     <!-- scripts -->
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        window.supportpalAsyncInit = function() {
+            SupportPal.mount({
+                "baseURL": "http://support.loopmobility.co/en/helpwidget",
+                "hash": "SRhhnxRpqZ",
+                "knowledgebase": {
+                    "enabled": false
+                },
+                "submitTicket": {
+                    "enabled": true,
+                    "departmentId": "1",
+                    "subject": true
+                },
+                "type": "popup",
+                "position": "right",
+                "colour": "#01718c",
+                "buttonIcon": "bubble2"
+            });
+        };
+
+    </script>
+    <script async src='http://support.loopmobility.co/app/Modules/Ticket/Channels/HelpWidget/Views/js/supportpal.min.js?v=3.2.1'></script>
 </body>
 
 </html>

@@ -6987,7 +6987,28 @@ textarea.form-input {
     fill: url(#SVGID_24_);
 }
 
+.int-map{
+    width: 100vw;
+    height: 80vh;
+    overflow-x: hidden;
+    position: absolute;
+    left: -45px;
+    top: -123px;
+}
 
+.map-label {
+    opacity: 0;
+    font-weight: 700;
+    font-size: 35px;
+    transition: opacity 1s ease-in-out;
+}
+
+#pin1:hover ~ #label1,
+#pin2:hover ~ #label2,
+#pin3:hover ~ #label3{
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
 
 
 
