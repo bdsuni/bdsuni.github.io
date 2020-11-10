@@ -7048,6 +7048,9 @@ textarea.form-input {
      display: none;
 }
 
+.only-phone{
+    display: none;
+}
 
 @media only screen and (max-width: 999px) {
     .tt-text {
@@ -7059,10 +7062,12 @@ textarea.form-input {
     .icon-img{
         max-width: 30vw;
     }
-    .padding-top-204,
+    .padding-top-204{
+        padding-top: 0;
+    }
     .padding-top-60,
     .padding-top-90{
-        padding-top: 0;
+        padding-top: 10px;
     }
     .padding-top-120,
     .padding-top-bottom-60,
@@ -7082,6 +7087,9 @@ textarea.form-input {
     }
     .margin-top-60{
         margin-top: 10px;
+    }
+    .headline-m{
+        margin-top: 50px;
     }
     .body-text-m {
         max-width: 80vw;
@@ -7109,5 +7117,29 @@ textarea.form-input {
     }
     .app-label:hover{
         font-size: 24px;
+    }
+    .phone-fb-50{
+        flex-basis: 45%;
+    }
+    .no-phone{
+        display: none;
+    }
+    .only-phone{
+        display: block;
+    }
+    .phone-no-m-p{
+        margin: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+        padding-top: 0px;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .body-text-xs-b{
+        font-size: 10px;
     }
 }
