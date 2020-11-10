@@ -7048,7 +7048,8 @@ textarea.form-input {
      display: none;
 }
 
-.only-phone{
+.only-phone,
+.only-f-phone{
     display: none;
 }
 
@@ -7126,6 +7127,9 @@ textarea.form-input {
     }
     .only-phone{
         display: block;
+    }
+    .only-f-phone{
+        display: flex;
     }
     .phone-no-m-p{
         margin: 0;
