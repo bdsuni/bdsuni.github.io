@@ -7142,4 +7142,7 @@ textarea.form-input {
     .body-text-xs-b{
         font-size: 10px;
     }
+    .list_margin-30px.list_row .list__item{
+        margin-right: 20px;
+    }
 }
