@@ -7016,6 +7016,12 @@ textarea.form-input {
     .tt-text {
         opacity: 1;
     }
+    .scooter-interactive{
+        transform: scale(1.6);
+    }
+    .icon-img{
+        max-width: 30vw;
+    }
 }
 
 .app-label {
