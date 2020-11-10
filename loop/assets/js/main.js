@@ -450,6 +450,7 @@ $(function () {
         var last_name = $("#last_name").val().trim();
         var email = $("#email").val().trim();
         var message = $("#message").val().trim();
+        var subject = $("#subject").val().trim();
 
         $.ajax({
             url: 'assets/ajax/mail.php',
@@ -459,7 +460,8 @@ $(function () {
                 'first_name': first_name,
                 'last_name': last_name,
                 'email': email,
-                'message': message
+                'message': message,
+                'subject': subject,
             },
             dataType: 'html',
             beforeSend: function () {

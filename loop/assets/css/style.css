@@ -3757,7 +3757,7 @@ button.mfp-close {
     position: absolute;
     left: 0;
     top: 0;
-    z-index: 0;
+    z-index: -1;
 }
 
 /* team/services sliders */
