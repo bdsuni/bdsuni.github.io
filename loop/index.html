@@ -23,6 +23,7 @@
     <!-- styles -->
     <link href="assets/css/plugins.css" rel="stylesheet" type="text/css">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfqzaUZAAAAAAkJyFKXU9QoXAa0On8LcKCe3d6p"></script>
 </head>
 
 <body class="preloader cursor-anim-enable">
@@ -979,25 +980,28 @@
                                         <!-- flex-container start -->
                                         <div class="flex-container padding-top-60">
                                             <!-- column start -->
-                                            <div class="four-columns padding-top-30">
+                                            <div class="six-columns padding-top-30">
                                                 <div class="column-l-r-margin-10 pos-rel">
-                                                    <input type="text" name="first_name" id="first_name" required class="form-input js-pointer-small">
-                                                    <label for="first_name" class="form-label" data-text="First name">First name</label>
+                                                    <input type="text" name="userName" id="user_name" required class="form-input js-pointer-small">
+                                                    <label for="user_name" class="form-label" data-text="Your name">Your name</label>
                                                     <div class="anim-line-bottom"></div>
                                                 </div>
                                             </div><!-- column end -->
 
                                             <!-- column start -->
+<!--
                                             <div class="four-columns padding-top-30">
                                                 <div class="column-l-r-margin-10 pos-rel">
                                                     <input type="text" name="last_name" id="last_name" required class="form-input js-pointer-small">
                                                     <label for="last_name" class="form-label tr-delay-01" data-text="Last name">Last name</label>
                                                     <div class="anim-line-bottom tr-delay-01"></div>
                                                 </div>
-                                            </div><!-- column end -->
+                                            </div>
+-->
+                                            <!-- column end -->
 
                                             <!-- column start -->
-                                            <div class="four-columns padding-top-30">
+                                            <div class="six-columns padding-top-30">
                                                 <div class="column-l-r-margin-10 pos-rel">
                                                     <input type="email" name="email" id="email" required class="form-input js-pointer-small">
                                                     <label for="email" class="form-label tr-delay-02 email-label" data-text="Email address">Email address</label>
@@ -1006,6 +1010,7 @@
                                             </div><!-- column end -->
 
                                             <!-- column start -->
+<!--
                                             <div class="twelve-columns padding-top-30">
                                                 <div class="column-l-r-margin-10 pos-rel">
                                                     <select name="subject" id="subject" required class="form-input js-pointer-small">
@@ -1016,7 +1021,9 @@
                                                     <label for="subject" class="form-label tr-delay-03" data-text="Subject">Subject</label>
                                                     <div class="anim-line-bottom tr-delay-03"></div>
                                                 </div>
-                                            </div><!-- column end -->
+                                            </div>
+-->
+                                            <!-- column end -->
 
                                             <!-- column start -->
                                             <div class="twelve-columns padding-top-30">
@@ -1243,30 +1250,10 @@
     </div><!-- scroll-content end -->
 
     <!-- scripts -->
+    
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
-    <script>
-        window.supportpalAsyncInit = function() {
-            SupportPal.mount({
-                "baseURL": "http://support.loopmobility.co/en/helpwidget",
-                "hash": "SRhhnxRpqZ",
-                "knowledgebase": {
-                    "enabled": false
-                },
-                "submitTicket": {
-                    "enabled": true,
-                    "departmentId": "1",
-                    "subject": true
-                },
-                "type": "popup",
-                "position": "right",
-                "colour": "#01718c",
-                "buttonIcon": "bubble2"
-            });
-        };
-
-    </script>
-    <script async src='http://support.loopmobility.co/app/Modules/Ticket/Channels/HelpWidget/Views/js/supportpal.min.js?v=3.2.1'></script>
+    
 </body>
 
 </html>

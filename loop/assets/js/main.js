@@ -341,6 +341,14 @@ $(function () {
             });
 
             var appSwiper = new Swiper('.app-slider', {
+                effect: 'cube',
+                grabCursor: true,
+                cubeEffect: {
+                    shadow: true,
+                    slideShadows: true,
+                    shadowOffset: 20,
+                    shadowScale: 0.94,
+                },
                 pagination: {
                     el: '.app-pagination',
                     clickable: true,
@@ -446,65 +454,83 @@ $(function () {
 
     /* 11. Contact form */
     $("#send_form").on('submit', function () {
-        var first_name = $("#first_name").val().trim();
-        var last_name = $("#last_name").val().trim();
+        var username = $("#user_name").val().trim();
+        //        var first_name = $("#first_name").val().trim();
+        //        var last_name = $("#last_name").val().trim();
         var email = $("#email").val().trim();
         var message = $("#message").val().trim();
-        var subject = $("#subject").val().trim();
+        //        var subject = $("#subject").val().trim();
+        const data = {
+            'userName': username,
+            'email': email,
+            'query': message,
+        }
 
-        $.ajax({
-            url: 'assets/ajax/mail.php',
-            type: 'POST',
-            cache: false,
-            data: {
-                'first_name': first_name,
-                'last_name': last_name,
-                'email': email,
-                'message': message,
-                'subject': subject,
-            },
-            dataType: 'html',
-            beforeSend: function () {
-                $("#send").addClass("js-active");
-            },
-            success: function (data) {
-                if (!data || data != "Good") {
-                    $("#m_err").addClass("js-active");
-                    $(".form-box").addClass("js-active");
-                    setTimeout(function () {
-                        $("#send").removeClass("js-active");
-                    }, 2000);
-                } else {
-                    $("#m_sent").addClass("js-active");
-                    $(".form-box").addClass("js-active");
-                    setTimeout(function () {
-                        $("#send").removeClass("js-active");
-                        $("#send_form").trigger("reset");
-                        $('.email-label').removeClass("js-active");
-                    }, 2000);
-                }
-                $('.js-popup-close').click(function () {
-                    $(this).parents('.js-popup-fade').removeClass("js-active");
-                    $('.form-box').removeClass("js-active");
-                    return false;
-                });
+        function validateCaptcha(data) {
+            // e.preventDefault();
+            grecaptcha.ready(function () {
+                grecaptcha.execute('6LfqzaUZAAAAAAkJyFKXU9QoXAa0On8LcKCe3d6p', {
+                    action: 'submit'
+                }).then(function (token) {
+                    data['token'] = token;
+                    submitFeedback(data);
+                }).catch((e) => console.log(e));
+            });
+        }
 
-                $(document).keydown(function (e) {
-                    if (e.keyCode === 27) {
-                        e.stopPropagation();
-                        $('.js-popup-fade').removeClass("js-active");
-                        $('.form-box').removeClass("js-active");
+        validateCaptcha(data);
+
+        function submitFeedback(data) {
+            $.ajax({
+                url: 'https://api.loop.qa/user/contact_us',
+                type: 'POST',
+                cache: false,
+                data: data,
+                dataType: 'html',
+                beforeSend: function () {
+                    $("#send").addClass("js-active");
+                },
+                success: function (datax) {
+                    console.log(datax);
+                    if (datax || datax.statusCode === 200) {
+                        $("#m_sent").addClass("js-active");
+                        $(".form-box").addClass("js-active");
+                        setTimeout(function () {
+                            $("#send").removeClass("js-active");
+                            $("#send_form").trigger("reset");
+                            $('.email-label').removeClass("js-active");
+                        }, 2000);
+                    } else {
+                        $("#m_err").addClass("js-active");
+                        $(".form-box").addClass("js-active");
+                        setTimeout(function () {
+                            $("#send").removeClass("js-active");
+                        }, 2000);
+
                     }
-                });
-
-                $('.js-popup-fade').click(function (e) {
-                    if ($(e.target).closest('.js-popup').length == 0) {
-                        $('.js-popup-fade').removeClass("js-active");
+                    $('.js-popup-close').click(function () {
+                        $(this).parents('.js-popup-fade').removeClass("js-active");
                         $('.form-box').removeClass("js-active");
-                    }
-                });
-            },
-        })
+                        return false;
+                    });
+
+                    $(document).keydown(function (e) {
+                        if (e.keyCode === 27) {
+                            e.stopPropagation();
+                            $('.js-popup-fade').removeClass("js-active");
+                            $('.form-box').removeClass("js-active");
+                        }
+                    });
+
+                    $('.js-popup-fade').click(function (e) {
+                        if ($(e.target).closest('.js-popup').length == 0) {
+                            $('.js-popup-fade').removeClass("js-active");
+                            $('.form-box').removeClass("js-active");
+                        }
+                    });
+                },
+            })
+        }
         return false;
     });
 
