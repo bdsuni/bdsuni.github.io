@@ -7044,6 +7044,7 @@ textarea.form-input {
     font-size: 64px;
 }
 
+/*
 .app-slider:before {
     content: '';
     background: url(../images/app/ip12.png);
@@ -7054,11 +7055,14 @@ textarea.form-input {
     position: absolute;
     z-index: 3;
 }
+*/
 
+/*
 .app-slider img {
     width: 363px;
     height: 783px;
 }
+*/
 
 .font-weight-700 {
     font-weight: 700;
@@ -7107,6 +7111,7 @@ textarea.form-input {
         padding-top: 0;
     }
 
+    .padding-top-30,
     .padding-top-60,
     .padding-top-90 {
         padding-top: 10px;

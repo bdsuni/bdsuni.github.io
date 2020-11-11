@@ -341,14 +341,7 @@ $(function () {
             });
 
             var appSwiper = new Swiper('.app-slider', {
-                effect: 'cube',
-                grabCursor: true,
-                cubeEffect: {
-                    shadow: true,
-                    slideShadows: true,
-                    shadowOffset: 20,
-                    shadowScale: 0.94,
-                },
+                effect: 'flip',
                 pagination: {
                     el: '.app-pagination',
                     clickable: true,
