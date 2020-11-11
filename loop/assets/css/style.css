@@ -6987,7 +6987,7 @@ textarea.form-input {
     fill: url(#SVGID_24_);
 }
 
-.int-map{
+.int-map {
     width: 100vw;
     height: 80vh;
     overflow-x: hidden;
@@ -7005,7 +7005,7 @@ textarea.form-input {
 
 #pin1:hover ~ #label1,
 #pin2:hover ~ #label2,
-#pin3:hover ~ #label3{
+#pin3:hover ~ #label3 {
     opacity: 0.7;
     transition: opacity 0.3s ease-in-out;
 }
@@ -7044,6 +7044,11 @@ textarea.form-input {
     font-size: 64px;
 }
 
+.loop-app {
+    transform: scale(0.5);
+    transform-origin: top;
+}
+
 /*
 .app-slider:before {
     content: '';
@@ -7063,6 +7068,9 @@ textarea.form-input {
     height: 783px;
 }
 */
+.m-h-50{
+    max-height: 50vh;
+}
 
 .font-weight-700 {
     font-weight: 700;
@@ -7089,12 +7097,16 @@ textarea.form-input {
 }
 
 @media only screen and (max-width: 999px) {
+    .app-slider{
+
+    }
     .map-bg {
-    background: url(../images/backgrounds/map/map.png);
-    background-size: 240%;
-    background-repeat: no-repeat;
-    background-position: 40% -30%;
-}
+        background: url(../images/backgrounds/map/map.png);
+        background-size: 240%;
+        background-repeat: no-repeat;
+        background-position: 40% -30%;
+    }
+
     .tt-text {
         opacity: 1;
     }
@@ -7212,11 +7224,16 @@ textarea.form-input {
     .list_margin-30px.list_row .list__item {
         margin-right: 20px;
     }
-    .int-map{
+
+    .int-map {
         width: 210vw;
         left: -50vw;
     }
-    .map-label{
+
+    .map-label {
         opacity: 1;
+    }
+    .m-h-50{
+        max-height: 110vh;
     }
 }
