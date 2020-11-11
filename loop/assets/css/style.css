@@ -7235,9 +7235,32 @@ textarea.form-input {
     .m-h-50{
         max-height: 110vh;
     }
+    .phone-r-fb-50{
+        flex-basis: 45% !important;
+    }
 }
 
 .grecaptcha-badge{
     visibility: hidden;
     display: none;
+}
+
+@media only screen and (max-width : 767px) and (orientation : landscape){
+    .phone-l-p{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    .video-bg {
+    min-width: 100%;
+    min-height: 100%;
+	position: absolute;
+	left: 50%;
+	top:  72%;
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+
+}
 }
