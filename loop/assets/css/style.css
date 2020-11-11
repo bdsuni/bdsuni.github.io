@@ -7207,4 +7207,11 @@ textarea.form-input {
     .list_margin-30px.list_row .list__item {
         margin-right: 20px;
     }
+    .int-map{
+        width: 210vw;
+        left: -50vw;
+    }
+    .map-label{
+        opacity: 1;
+    }
 }
