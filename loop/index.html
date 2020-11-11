@@ -857,7 +857,7 @@
                         <section class="padding-top-bottom-120" id="news">
                             <!-- title start -->
                             <div class="container small">
-                                <h2 class="headline-xxxl text-color-blue anim-split-lines text-center" data-scroll data-scroll-offset="20%">News &amp; Updates</h2>
+                                <h2 class="headline-xxxl text-color-blue anim-split-lines text-center" data-scroll data-scroll-offset="20%">Blogs</h2>
                             </div><!-- title end -->
 
                             <!-- container start -->
@@ -1253,7 +1253,27 @@
     
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
-    
+    <script type="text/javascript">
+        window.supportpalAsyncInit = function () {
+            SupportPal.mount({
+                "baseURL": "https://support.loopmobility.co/en/helpwidget",
+                "hash": "SRhhnxRpqZ",
+                "knowledgebase": {
+                    "enabled": false
+                },
+                "submitTicket": {
+                    "enabled": true,
+                    "departmentId": "1",
+                    "subject": true
+                },
+                "type": "popup",
+                "position": "right",
+                "colour": "#01718c",
+                "buttonIcon": "bubble2"
+            });
+        };
+        </script>
+        <script async src='https://support.loopmobility.co/app/Modules/Ticket/Channels/HelpWidget/Views/js/supportpal.min.js?v=3.2.1'></script>
 </body>
 
 </html>
