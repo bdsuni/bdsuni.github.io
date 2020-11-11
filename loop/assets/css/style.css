@@ -6990,7 +6990,7 @@ textarea.form-input {
 .int-map {
     width: 100vw;
     height: 80vh;
-    overflow-x: hidden;
+    overflow: hidden;
     position: absolute;
     left: -45px;
     top: -123px;
@@ -7069,7 +7069,7 @@ textarea.form-input {
 }
 */
 .m-h-50{
-    max-height: 50vh;
+    max-height: 80vh;
 }
 
 .font-weight-700 {
