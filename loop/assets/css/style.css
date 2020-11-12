@@ -7240,6 +7240,9 @@ textarea.form-input {
     .phone-r-fb-50 {
         flex-basis: 45% !important;
     }
+    .loop-app {
+        transform: scale(1);
+    }
 }
 
 .grecaptcha-badge {

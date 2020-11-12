@@ -49,7 +49,8 @@
         <a href="index.html" class="js-pointer-large js-animsition-link">
             <div class="color-mix-blend-normal header-logo">
                 <div class="header-logo__box">
-                    <img class="header-logo__img" src="assets/images/logo/logo.png" alt="logo">
+                    <img class="header-logo__img no-phone" src="assets/images/logo/logo.png" alt="logo">
+                    <img class="header-logo__img only-phone" src="assets/images/logo/icon.png" alt="logo">
                 </div>
             </div>
         </a>
@@ -91,7 +92,7 @@
 
                 <!-- nav-btn-box start -->
                 <li class="nav-btn-box js-nav-bg-change">
-                    <a href="#who" class="nav-btn dropdown-hidden-btn js-menu-open-close js-pointer-large"  target="_blank">
+                    <a href="#who" class="nav-btn dropdown-hidden-btn js-menu-open-close js-pointer-large" target="_blank">
                         <span class="nav-btn__inner" data-text="About">About</span>
                     </a>
                     <div class="nav-bg-box">
@@ -115,7 +116,7 @@
 
                 <!-- nav-btn-box start -->
                 <li class="nav-btn-box js-nav-bg-change">
-                    <a href="#news" class="nav-btn dropdown-hidden-btn js-menu-open-close js-pointer-large"  target="_blank">
+                    <a href="#news" class="nav-btn dropdown-hidden-btn js-menu-open-close js-pointer-large" target="_blank">
                         <span class="nav-btn__inner" data-text="News">News</span>
                     </a>
                     <div class="nav-bg-box">
@@ -125,7 +126,7 @@
 
                 <!-- nav-btn-box start -->
                 <li class="nav-btn-box js-nav-bg-change">
-                    <a href="#contact" class="nav-btn dropdown-hidden-btn js-menu-open-close js-pointer-large"  target="_blank">
+                    <a href="#contact" class="nav-btn dropdown-hidden-btn js-menu-open-close js-pointer-large" target="_blank">
                         <span class="nav-btn__inner" data-text="Contact">Contact</span>
                     </a>
                     <div class="nav-bg-box">
@@ -242,42 +243,61 @@
                     <!-- container start -->
                     <div class="container padding-top-60 padding-bottom-150">
                         <!-- flex-container start -->
-                        <div class="flex-container flex-align-center padding-top-60 only-f-phone">
-                            <div class="padding-top-30 text-color-blue" data-scroll data-scroll-speed="1">
-                                <div class="d-inline-block">
-                                    <div class="scrollanim-activate" data-scroll data-scroll-offset="20%">
-                                        <div class="hidden-box text-left-offset">
-                                            <h2 class="headline-xl anim-text-slide">How to Ride</h2>
-                                            <p class="body-text-m max-width-400 d-inline-block anim-split-lines text-color-black phone-no-m-p" data-scroll data-scroll-offset="20%">Download Loop app from App Store or Play store</p>
+
+                        <div class="flex-container flex-align-center padding-top-60 only-phone">
+
+                            <!-- column start -->
+                            <div class="five-columns padding-top-30">
+                                <div class="hidden-box">
+                                    <div data-scroll data-scroll-speed="-1.2">
+                                        <div class="anim-img-reveal" data-scroll data-scroll-offset="10%" style="background-image:url(assets/images/app/dl.jpg); width: 50vw;">
+                                            <img src="assets/images/app/dl.jpg" alt="About us">
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="two-columns padding-top-204 phone-fb-50">
-                                <img src="assets/images/app/dl.jpg" alt="scooter">
-                            </div>
-                            <div class="two-columns only-phone phone-fb-50">
-                                <!-- column start -->
-                                <div class="two-columns phone-no-m-p only-phone">
-                                    <div class="column-l-r-margin-10">
-                                        <img src="assets/images/app/qrcode.png" alt="QR" style="height: 128px; width: auto;margin-left: 20px">
+                                <div class="padding-top-30 text-color-mix-blend" data-scroll data-scroll-speed="1" style="margin-top: -210px; margin-left: 24vw;margin-bottom: 40px;">
+                                    <div class="">
+                                        <div class="scrollanim-activate" data-scroll data-scroll-offset="20%">
+                                            <div class="hidden-box text-left-offset">
+                                                <h2 class="headline-xl anim-text-slide">How to Ride</h2>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div><!-- column end -->
+                                    <div class="column-l-margin-40 margin-top-20">
+                                        <p class="body-text-m max-width-400 d-inline-block anim-split-lines" data-scroll data-scroll-offset="20%" style="max-width: 40vw;margin-left: 30vw;">Download Loop app from App Store or Play store</p>
+                                    </div>
+                                </div>
+                            </div><!-- column end -->
+                            <!-- column start -->
+                            <div class="flex-container d-flex">
+                                <div class="phone-r-fb-50 scrollanim-activate">
+                                    <div data-scroll>
+                                        <div class="anim-img-reveal badge" data-scroll data-scroll-offset="20%" style="background-image:url(assets/images/app/qrcode.png)">
+                                            <img src="assets/images/app/qrcode.png" alt="App">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="phone-r-fb-50 scrollanim-activate">
+                                    <div data-scroll>
+                                        <a href="https://apps.apple.com/in/app/loop-dreams-on-wheels/id1504675606" class="js-pointer-large">
+                                            <div class="anim-img-reveal badge" data-scroll data-scroll-offset="30%" style="background-image:url(assets/images/app/app-en.png)">
+                                                <img src="assets/images/app/app-en.png" alt="App">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div data-scroll>
+                                        <a href="https://play.google.com/store/apps/details?id=com.Loop.app" class="js-pointer-large">
+                                            <div class="anim-img-reveal badge" data-scroll data-scroll-offset="30%" style="background-image:url(assets/images/app/play-en.png)">
+                                                <img src="assets/images/app/play-en.png" alt="Play">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- column end -->
+                        </div><!-- flex-container end -->
+                        <!-- flex-container start -->
 
-                                <!-- column start -->
-                                <div class="four-columns phone-no-m-p only-phone">
-                                    <div class="column-l-r-margin-10">
-                                        <a href="https://apps.apple.com/in/app/loop-dreams-on-wheels/id1504675606">
-                                            <img src="assets/images/app/app-en.png" alt="App" style="height: 51px;width: auto; margin-left: 17px">
-                                        </a>
-                                        <br>
-                                        <a href="https://play.google.com/store/apps/details?id=com.Loop.app">
-                                            <img src="assets/images/app/play-en.png" alt="Play" style="height: 51px;width: auto; margin-left: 17px">
-                                        </a>
-                                    </div>
-                                </div><!-- column end -->
-                            </div>
-                        </div>
                         <div class="flex-container flex-align-center padding-top-60 no-phone">
 
                             <!-- column start -->
@@ -989,7 +1009,7 @@
                                             </div><!-- column end -->
 
                                             <!-- column start -->
-<!--
+                                            <!--
                                             <div class="four-columns padding-top-30">
                                                 <div class="column-l-r-margin-10 pos-rel">
                                                     <input type="text" name="last_name" id="last_name" required class="form-input js-pointer-small">
@@ -1010,7 +1030,7 @@
                                             </div><!-- column end -->
 
                                             <!-- column start -->
-<!--
+                                            <!--
                                             <div class="twelve-columns padding-top-30">
                                                 <div class="column-l-r-margin-10 pos-rel">
                                                     <select name="subject" id="subject" required class="form-input js-pointer-small">
@@ -1165,24 +1185,24 @@
                                 <!-- column start -->
                                 <div class="two-columns padding-top-bottom-60 no-phone">
                                     <ul class="list list_row list_margin-30px">
-                                    <li class="list__item">
-                                        <a href="https://www.facebook.com/LoopMobility" class="flip-btn js-pointer-small" data-splitting>Facebook</a>
-                                    </li>
-                                    <li class="list__item">
-                                        <a href="https://www.linkedin.com/company/loop-mobility/" class="flip-btn js-pointer-small" data-splitting>LinkedIn</a>
-                                    </li>
-                                    <li class="list__item">
-                                        <a href="https://www.instagram.com/loopmobility/" class="flip-btn js-pointer-small" data-splitting>Instagram</a>
-                                    </li>
-                                    <li class="list__item">
-                                        <a href="https://twitter.com/loopmobility" class="flip-btn js-pointer-small" data-splitting>Twitter</a>
-                                    </li>
-                                </ul><!-- footer-social end -->
+                                        <li class="list__item">
+                                            <a href="https://www.facebook.com/LoopMobility" class="flip-btn js-pointer-small" data-splitting>Facebook</a>
+                                        </li>
+                                        <li class="list__item">
+                                            <a href="https://www.linkedin.com/company/loop-mobility/" class="flip-btn js-pointer-small" data-splitting>LinkedIn</a>
+                                        </li>
+                                        <li class="list__item">
+                                            <a href="https://www.instagram.com/loopmobility/" class="flip-btn js-pointer-small" data-splitting>Instagram</a>
+                                        </li>
+                                        <li class="list__item">
+                                            <a href="https://twitter.com/loopmobility" class="flip-btn js-pointer-small" data-splitting>Twitter</a>
+                                        </li>
+                                    </ul><!-- footer-social end -->
                                 </div><!-- column end -->
 
                                 <!-- column start -->
                                 <div class="four-columns padding-top-bottom-60 no-phone">
-                                    
+
                                 </div><!-- column end -->
                             </div><!-- flex-container end -->
                         </div><!-- column end -->
@@ -1209,7 +1229,7 @@
 
                             <!-- column start -->
                             <div class="four-columns phone-no-m-p only-phone">
-                                
+
                             </div><!-- column end -->
                         </div>
                         <div class="two-columns padding-top-204 phone-fb-50">
@@ -1220,7 +1240,7 @@
                             <div class="column-l-r-margin-10 padding-top-30 pos-rel">
                                 <div class="anim-line-top" data-scroll data-scroll-offset="5%"></div>
                                 <!-- footer-social start -->
-                                    <div class="column-l-r-margin-10">
+                                <div class="column-l-r-margin-10">
                                     <a href="https://apps.apple.com/in/app/loop-dreams-on-wheels/id1504675606">
                                         <img src="assets/images/app/white-app-en.png" alt="App" style="height: 40px;width: auto;">
                                     </a>
@@ -1250,11 +1270,11 @@
     </div><!-- scroll-content end -->
 
     <!-- scripts -->
-    
+
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
     <script type="text/javascript">
-        window.supportpalAsyncInit = function () {
+        window.supportpalAsyncInit = function() {
             SupportPal.mount({
                 "baseURL": "https://support.loopmobility.co/en/helpwidget",
                 "hash": "SRhhnxRpqZ",
@@ -1272,8 +1292,9 @@
                 "buttonIcon": "bubble2"
             });
         };
-        </script>
-        <script async src='https://support.loopmobility.co/app/Modules/Ticket/Channels/HelpWidget/Views/js/supportpal.min.js?v=3.2.1'></script>
+
+    </script>
+    <script async src='https://support.loopmobility.co/app/Modules/Ticket/Channels/HelpWidget/Views/js/supportpal.min.js?v=3.2.1'></script>
 </body>
 
 </html>
