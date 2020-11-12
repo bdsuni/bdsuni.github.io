@@ -7257,7 +7257,12 @@ textarea.form-input {
 @media only screen and (min-width: 1900px) {
     .int-map {
         left: -285px;
-        top: -262px;
+        top: -92px;
+        height: 60vh;
+    }
+    .video-bg {
+        top: 54%;
+
     }
 }
 
@@ -7270,5 +7275,6 @@ textarea.form-input {
     .int-map {
         left: -600px;
         top: -212px;
+        height: 70vh;
     }
 }
