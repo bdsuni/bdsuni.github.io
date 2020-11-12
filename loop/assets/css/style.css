@@ -6740,11 +6740,11 @@ textarea.form-input {
 .video-bg {
     min-width: 100%;
     min-height: 100%;
-	position: absolute;
-	left: 50%;
-	top:  50%;
-	-webkit-transform: translate(-50%, -50%);
-	        transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 
 }
 
@@ -7067,7 +7067,7 @@ textarea.form-input {
     height: 783px;
 }
 */
-.m-h-50{
+.m-h-50 {
     max-height: 80vh;
 }
 
@@ -7096,9 +7096,8 @@ textarea.form-input {
 }
 
 @media only screen and (max-width: 999px) {
-    .app-slider{
+    .app-slider {}
 
-    }
     .map-bg {
         background: url(../images/backgrounds/map/map.png);
         background-size: 240%;
@@ -7227,40 +7226,49 @@ textarea.form-input {
     .int-map {
         width: 210vw;
         left: -50vw;
+        top: 0;
     }
 
     .map-label {
         opacity: 1;
     }
-    .m-h-50{
+
+    .m-h-50 {
         max-height: 110vh;
     }
-    .phone-r-fb-50{
+
+    .phone-r-fb-50 {
         flex-basis: 45% !important;
     }
 }
 
-.grecaptcha-badge{
+.grecaptcha-badge {
     visibility: hidden;
     display: none;
 }
 
-@media only screen and (max-width : 767px) and (orientation : landscape){
-    .phone-l-p{
+@media only screen and (max-width : 767px) and (orientation : landscape) {
+    .phone-l-p {
         padding-top: 20px;
         padding-bottom: 20px;
     }
 }
 
-@media only screen and (min-width: 1440px){
-    .video-bg {
-    min-width: 100%;
-    min-height: 100%;
-	position: absolute;
-	left: 50%;
-	top:  72%;
-	-webkit-transform: translate(-50%, -50%);
-	        transform: translate(-50%, -50%);
-
+@media only screen and (min-width: 1900px) {
+    .int-map {
+        left: -285px;
+        top: -262px;
+    }
 }
+
+@media only screen and (min-width: 2560px) {
+    .video-bg {
+        top: 72%;
+
+    }
+
+    .int-map {
+        left: -600px;
+        top: -212px;
+    }
 }
