@@ -126,7 +126,7 @@
 
                 <!-- nav-btn-box start -->
                 <li class="nav-btn-box js-nav-bg-change">
-                    <a href="index.html#contact" class="nav-btn dropdown-hidden-btn js-menu-open-close js-pointer-large" target="_blank">
+                    <a href="dosanddonts.html#contact" class="nav-btn dropdown-hidden-btn js-menu-open-close js-pointer-large" target="_blank">
                         <span class="nav-btn__inner" data-text="Contact">Contact</span>
                     </a>
                     <div class="nav-bg-box">
@@ -291,6 +291,128 @@
                         </section><!-- work process end -->
                     </div><!-- padding-top-bottom-30 end -->
                 </div><!-- section-bg-light end -->
+                <!-- form section start -->
+                <section class="pos-rel hidden-box" data-scroll-section id="contact">
+                    <!-- bg-parallax -->
+                    <div class="bg-parallax" style="background-image:url(assets/images/backgrounds/touch.jpg)" data-scroll data-scroll-speed="-1.5"></div>
+
+                    <!-- bg-overlay -->
+                    <div class="bg-overlay-black bg-overlay-black_deep"></div>
+
+                    <!-- flex-min-height-100vh start -->
+                    <div class="flex-min-height-100vh">
+                        <!-- container start -->
+                        <div class="container small padding-top-bottom-150">
+                            <!-- pos-rel start -->
+                            <div class="pos-rel">
+                                <!-- form-box start -->
+                                <div class="form-box scrollanim-activate line-scrollanim-activate form-anim-activate" data-scroll data-scroll-offset="30%">
+                                    <!-- title start -->
+                                    <div class="text-center">
+                                        <h3 class="headline-l anim-fade-to-top">Lets Get In Touch!</h3>
+                                    </div><!-- title end -->
+
+                                    <!-- form start -->
+                                    <form method="post" name="formobrsv" id="send_form">
+                                        <!-- flex-container start -->
+                                        <div class="flex-container padding-top-60">
+                                            <!-- column start -->
+                                            <div class="six-columns padding-top-30">
+                                                <div class="column-l-r-margin-10 pos-rel">
+                                                    <input type="text" name="userName" id="user_name" required class="form-input js-pointer-small">
+                                                    <label for="user_name" class="form-label" data-text="Your name">Your name</label>
+                                                    <div class="anim-line-bottom"></div>
+                                                </div>
+                                            </div><!-- column end -->
+
+                                            <!-- column start -->
+                                            <!--
+                                            <div class="four-columns padding-top-30">
+                                                <div class="column-l-r-margin-10 pos-rel">
+                                                    <input type="text" name="last_name" id="last_name" required class="form-input js-pointer-small">
+                                                    <label for="last_name" class="form-label tr-delay-01" data-text="Last name">Last name</label>
+                                                    <div class="anim-line-bottom tr-delay-01"></div>
+                                                </div>
+                                            </div>
+-->
+                                            <!-- column end -->
+
+                                            <!-- column start -->
+                                            <div class="six-columns padding-top-30">
+                                                <div class="column-l-r-margin-10 pos-rel">
+                                                    <input type="email" name="email" id="email" required class="form-input js-pointer-small">
+                                                    <label for="email" class="form-label tr-delay-02 email-label" data-text="Email address">Email address</label>
+                                                    <div class="anim-line-bottom tr-delay-02"></div>
+                                                </div>
+                                            </div><!-- column end -->
+
+                                            <!-- column start -->
+                                            <!--
+                                            <div class="twelve-columns padding-top-30">
+                                                <div class="column-l-r-margin-10 pos-rel">
+                                                    <select name="subject" id="subject" required class="form-input js-pointer-small">
+                                                        <option value="Technical Support">Technical Support</option>
+                                                        <option value="Partnership with Loop">Partnership with loop</option>
+                                                        <option value="Requesting Loop">Requesting Loop</option>
+                                                    </select>
+                                                    <label for="subject" class="form-label tr-delay-03" data-text="Subject">Subject</label>
+                                                    <div class="anim-line-bottom tr-delay-03"></div>
+                                                </div>
+                                            </div>
+-->
+                                            <!-- column end -->
+
+                                            <!-- column start -->
+                                            <div class="twelve-columns padding-top-30">
+                                                <div class="column-l-r-margin-10 pos-rel">
+                                                    <textarea name="message" id="message" required class="form-input js-pointer-small"></textarea>
+                                                    <label for="message" class="form-label tr-delay-03" data-text="Message content">Message content</label>
+                                                    <div class="anim-line-bottom tr-delay-03"></div>
+                                                </div>
+                                            </div><!-- column end -->
+                                        </div><!-- flex-container end -->
+
+                                        <!-- button start -->
+                                        <div class="padding-top-90 text-center">
+                                            <button id="send" class="border-btn js-pointer-large anim-fade-to-top tr-delay-06">
+                                                <span class="border-btn__inner">submit</span>
+                                                <span class="btn-wait">Wait</span>
+                                                <span class="border-btn__lines-1"></span>
+                                                <span class="border-btn__lines-2"></span>
+                                            </button>
+                                        </div><!-- button end -->
+                                    </form><!-- form end -->
+                                </div><!-- form-box end -->
+
+                                <!-- alert start -->
+                                <div class="js-popup-fade" id="m_sent">
+                                    <div class="js-popup text-center">
+                                        <div class="popup-icon">
+                                            <i class="fas fa-check"></i>
+                                        </div>
+                                        <div class="popup-alert headline-xs">
+                                            Thank you!<br>
+                                            Your submission<br>
+                                            has been received!
+                                        </div>
+                                        <div class="flip-btn js-popup-close js-pointer-large" data-splitting>Close</div>
+                                    </div>
+                                </div><!-- alert end -->
+
+                                <!-- alert start -->
+                                <div class="js-popup-fade" id="m_err">
+                                    <div class="js-popup text-center">
+                                        <div class="popup-icon">
+                                            <i class="fas fa-times"></i>
+                                        </div>
+                                        <div class="popup-alert headline-xs">Error</div>
+                                        <div class="flip-btn js-popup-close js-pointer-large" data-splitting>Close</div>
+                                    </div>
+                                </div><!-- alert end -->
+                            </div><!-- pos-rel end -->
+                        </div><!-- container end -->
+                    </div><!-- flex-min-height-100vh end -->
+                </section><!-- form section end -->
             </main><!-- main end -->
 
             <!-- footer start -->
