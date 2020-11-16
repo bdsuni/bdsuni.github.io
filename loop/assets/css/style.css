@@ -1437,6 +1437,13 @@ body {
     color: #0d9abb;
 }
 
+
+.text-stroke-deep-blue {
+    color: #02B5DF80;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #0d9abb;
+}
+
 .text-stroke-blue {
     color: #02B5DF60;
     -webkit-text-stroke: 1px;
@@ -6690,6 +6697,24 @@ textarea.form-input {
 }
 
 .bg-overlay-black.bg-overlay-black_light {
+    opacity: .3;
+}
+
+.bg-overlay-white {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: .5;
+    background-color: #fff;
+}
+
+.bg-overlay-white.bg-overlay-white_deep {
+    opacity: .8;
+}
+
+.bg-overlay-white.bg-overlay-white_light {
     opacity: .3;
 }
 
