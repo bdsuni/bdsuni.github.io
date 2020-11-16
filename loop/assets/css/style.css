@@ -7308,3 +7308,11 @@ textarea.form-input {
         height: 70vh;
     }
 }
+.blue-box-border{
+    border: 1px solid #02b5df;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
