@@ -345,6 +345,7 @@ $(function () {
                 pagination: {
                     el: '.app-pagination',
                     clickable: true,
+                    dynamicBullets: true,
                     renderBullet: function (index, className) {
                         switch (index) {
                             case 0:

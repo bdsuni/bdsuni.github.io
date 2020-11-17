@@ -7075,6 +7075,7 @@ textarea.form-input {
 .loop-app {
     transform: scale(0.4);
     transform-origin: top;
+    max-height: 50vh;
 }
 
 /*
@@ -7380,4 +7381,7 @@ textarea.form-input {
         top: -212px;
         height: 70vh;
     }
+}
+.w-a-imp{
+    width: auto !important;
 }
