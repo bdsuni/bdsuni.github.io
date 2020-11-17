@@ -1,5 +1,6 @@
 <svg id="eq30unkhvhl91" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 342 332" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
     <style>
+        .grad-loop{fill:url(#SVGID_1_);}
         #eq30unkhvhl92_to {
             animation: eq30unkhvhl92_to__to 3000ms linear infinite reverse forwards
         }
@@ -93,7 +94,14 @@
                 transform: translate(479.800000px, 222.269981px)
             }
         }
+
     </style>
+    <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="294.8863" y1="172.2512" x2="45.3192" y2="375.2726">
+        <stop offset="0" style="stop-color:#FBE519" />
+        <stop offset="0.43" style="stop-color:#FAD112" />
+        <stop offset="1" style="stop-color:#EF9321" />
+    </linearGradient>
+    <rect x="-8" y="237.8" class="grad-loop" width="356.3" height="71.8" />
     <g id="eq30unkhvhl92_to" transform="translate(-179.998243,177.802299)">
         <g id="eq30unkhvhl92" transform="translate(-169.298283,-177.802299)">
             <path id="eq30unkhvhl94" d="M139.700000,69C147.200000,56.700000,162.400000,50.800000,176.200000,55.100000C181.400000,56.700000,187,55.400000,191.300000,52C201.600000,44,214.900000,39.600000,229.300000,40.800000C258.300000,43.300000,279.700000,67.700000,278.700000,96.800000C277.800000,121.300000,261.100000,140.400000,239.900000,146.700000C222.200000,152,208.200000,165.600000,201.800000,182.800000C190.600000,212.800000,161.500000,234.200000,127.300000,233.700000C85.100000,233.100000,50.500000,198.300000,50.200000,156.100000C49.800000,113.100000,84,78.600000,125.800000,77.200000C131.500000,77.100000,136.700000,74,139.700000,69Z" opacity="0.1" fill="rgb(255,255,255)" stroke="none" stroke-width="1" />
