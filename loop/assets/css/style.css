@@ -7200,7 +7200,8 @@ textarea.form-input {
         margin-top: 10px;
     }
 
-    .headline-m {
+    .headline-m,
+    .headline-xs {
         margin-top: 50px;
     }
 
