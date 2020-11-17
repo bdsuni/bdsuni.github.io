@@ -5621,12 +5621,12 @@ body .content-bg-dark .anim-img-reveal:before {
     display: inline-block;
     position: relative;
     white-space: nowrap;
-    color: transparent;
+    color: #FBE519;
     -webkit-text-stroke: 1px;
 }
 
 .anim-stroke-fill-white {
-    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-color: transparent;
 }
 
 .anim-stroke-fill-black {
