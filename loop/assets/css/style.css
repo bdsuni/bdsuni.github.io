@@ -7026,7 +7026,8 @@ textarea.form-input {
     font-size: 35px;
     transition: opacity 1s ease-in-out;
 }
-.map-label-big{
+
+.map-label-big {
     font-size: 72px
 }
 
@@ -7143,7 +7144,7 @@ textarea.form-input {
 }
 
 .how-to {
-    background-image: url(../images/backgrounds/jump.png);
+    background-image: url(../images/backgrounds/escooter-bg.svg);
     background-repeat: no-repeat;
     background-position: right;
 }
@@ -7322,8 +7323,8 @@ textarea.form-input {
     }
 
     .how-to {
-        background-position: 210px 0;
-        background-size: 40%;
+        background-position: 150px -10px;
+        background-size: 70%;
     }
 
     .title-offset {
