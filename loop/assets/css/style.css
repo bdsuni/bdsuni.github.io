@@ -7140,9 +7140,11 @@ textarea.form-input {
 }
 
 .how-to {
+/*
     background-image: url(../images/black-woman-riding-electric-kick-scooter.jpg);
     background-repeat: no-repeat;
     background-position: right;
+*/
 }
 
 
@@ -7254,7 +7256,10 @@ textarea.form-input {
         display: flex;
     }
 
-
+    .padding-top-150 {
+        padding-top: 60px;
+        padding-bottom: 90px;
+    }
 
     .body-text-xs-b {
         font-size: 10px;
@@ -7300,9 +7305,13 @@ textarea.form-input {
         padding-right: 0;
     }
 
+    .phone-m-l-25 {
+        margin-left: 25vw;
+    }
+
     .how-to {
         background-image: none;
-/*
+        /*
         background-position: 160px -70px;
         background-size: contain;
 */

@@ -348,19 +348,19 @@ $(function () {
                     renderBullet: function (index, className) {
                         switch (index) {
                             case 0:
-                                return `<div class="find ` + className + `">
-                                                    <h3 class="text-color-blue app-label">Find</h3>
-                                                    <p class="body-text-s text-color-black margin-top-10 max-width-400">In a hurry just find a Loop near by you.</p>
+                                return `<div class="four-columns find ` + className + `">
+                                                    <h3 class="text-color-blue app-label text-center">Find</h3>
+                                                    <p class="body-text-s text-color-black margin-top-10 max-width-400 text-center">In a hurry just find a Loop near by you.</p>
                                                 </div>`
                             case 1:
-                                return `<div class="scan ` + className + `">
-                                                    <h3 class="text-color-blue app-label margin-top-60">Scan</h3>
-                                                    <p class="body-text-s text-color-black margin-top-10 max-width-400">Scan the Loop Scooter with your mobile or type in your code to activate.</p>
+                                return `<div class="four-columns scan ` + className + `">
+                                                    <h3 class="text-color-blue app-label text-center">Scan</h3>
+                                                    <p class="body-text-s text-color-black margin-top-10 max-width-400 text-center">Scan the Loop Scooter with your mobile or type in your code to activate.</p>
                                                 </div>`;
                             case 2:
-                                return `<div class="ride ` + className + `">
-                                                    <h3 class="text-color-blue app-label margin-top-60">Ride</h3>
-                                                    <p class="body-text-s text-color-black margin-top-10 max-width-400">Fasten your helmet, hop on your scooter and start your journey.</p>
+                                return `<div class="four-columns ride ` + className + `">
+                                                    <h3 class="text-color-blue app-label text-center">Ride</h3>
+                                                    <p class="body-text-s text-color-black margin-top-10 max-width-400 text-center">Fasten your helmet, hop on your scooter and start your journey.</p>
                                                 </div>`;
                             default:
                                 return '<span class="app-slider-bullet ' + className + '">' + (index + 1) + '</span>';
