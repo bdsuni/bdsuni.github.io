@@ -7120,6 +7120,32 @@ textarea.form-input {
     background-position: top left;
 }
 
+
+
+.blue-box-border {
+    border: 1px solid #02b5df;
+    border-radius: 4px;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transform: scale(1.0);
+    transition: transform 0.3s ease;
+}
+
+.blue-box-border:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.how-to {
+    background-image: url(../images/black-woman-riding-electric-kick-scooter.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+
 @media only screen and (max-width: 999px) {
     .app-slider {}
 
@@ -7227,7 +7253,7 @@ textarea.form-input {
         display: flex;
     }
 
-   
+
 
     .body-text-xs-b {
         font-size: 10px;
@@ -7255,10 +7281,12 @@ textarea.form-input {
         flex-basis: 49% !important;
         padding-right: 20px;
     }
+
     .loop-app {
         transform: scale(1);
     }
-     .phone-no-m-p {
+
+    .phone-no-m-p {
         margin: 0;
         margin-top: 0;
         margin-bottom: 0;
@@ -7269,6 +7297,11 @@ textarea.form-input {
         padding-bottom: 0;
         padding-left: 0;
         padding-right: 0;
+    }
+
+    .how-to {
+        background-position: 120px -36%;
+        background-size: contain;
     }
 }
 
@@ -7290,6 +7323,7 @@ textarea.form-input {
         top: -92px;
         height: 60vh;
     }
+
     .video-bg {
         top: 54%;
 
@@ -7307,12 +7341,4 @@ textarea.form-input {
         top: -212px;
         height: 70vh;
     }
-}
-.blue-box-border{
-    border: 1px solid #02b5df;
-    min-height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
 }
