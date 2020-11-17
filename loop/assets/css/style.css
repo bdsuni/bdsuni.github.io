@@ -7140,13 +7140,22 @@ textarea.form-input {
 }
 
 .how-to {
-/*
-    background-image: url(../images/black-woman-riding-electric-kick-scooter.jpg);
+    background-image: url(../images/backgrounds/jump.png);
     background-repeat: no-repeat;
     background-position: right;
-*/
 }
 
+@media only screen and (max-width: 1400px) {
+    .loop-app{
+        transform: scale(0.36)
+    }
+}
+
+@media only screen and (max-width: 1400px) and (orientation : portrait) {
+    .loop-app{
+        transform: scale(0.8)
+    }
+}
 
 @media only screen and (max-width: 999px) {
     .app-slider {}
@@ -7310,11 +7319,11 @@ textarea.form-input {
     }
 
     .how-to {
-        background-image: none;
-        /*
-        background-position: 160px -70px;
+/*        background-image: url(../images/backgrounds/jump.png);*/
+        
+        background-position: 160px -165px;
         background-size: contain;
-*/
+
     }
 }
 
