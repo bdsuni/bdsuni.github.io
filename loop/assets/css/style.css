@@ -7146,13 +7146,13 @@ textarea.form-input {
 }
 
 @media only screen and (max-width: 1400px) {
-    .loop-app{
+    .loop-app {
         transform: scale(0.36)
     }
 }
 
 @media only screen and (max-width: 1400px) and (orientation : portrait) {
-    .loop-app{
+    .loop-app {
         transform: scale(0.8)
     }
 }
@@ -7319,11 +7319,24 @@ textarea.form-input {
     }
 
     .how-to {
-/*        background-image: url(../images/backgrounds/jump.png);*/
-        
-        background-position: 160px -165px;
-        background-size: contain;
+        background-position: 210px 20px;
+        background-size: 40%;
+    }
 
+    .title-offset {
+        text-align: center;
+        font-size: 70px;
+        padding-top: 110px;
+    }
+
+    .video-bg {
+        max-width: 100vw;
+        min-height: 100%;
+        position: absolute;
+        left: 50%;
+        top: 14%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
     }
 }
 
