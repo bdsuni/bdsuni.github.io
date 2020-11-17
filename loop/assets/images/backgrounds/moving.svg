@@ -13,7 +13,10 @@
                 transform: translate(1109.589690px, 239.300000px)
             }
         }
+
     </style>
+    <rect x="-66.8" y="-7" fill="rgb(2,181,223)" stroke="rgb(2,181,223)" stroke-width="3" width="119.1" height="513" />
+    <rect x="714" y="-6" fill="rgb(2,181,223)" stroke="rgb(2,181,223)" stroke-width="3" width="114.4" height="513" />
     <g id="moving-object">
         <g id="moving-movin_to" transform="translate(-357,239.299994)">
             <g id="moving-movin" transform="translate(-363.950073,-239.299994)">
