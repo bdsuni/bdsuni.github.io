@@ -7354,7 +7354,7 @@ textarea.form-input {
     }
 
     .video-bg {
-        top: 54%;
+        top: 55%;
 
     }
 }
@@ -7374,4 +7374,16 @@ textarea.form-input {
 
 .w-a-imp {
     width: 100% !important;
+}
+.do-bg{
+    background-image: url(../images/backgrounds/moving.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+@media only screen and (max-width: 699px) {
+    .do-bg{
+        background-image: url(../images/backgrounds/moving.svg);
+        background-repeat: no-repeat;
+        background-position: 200px;
+    } 
 }
