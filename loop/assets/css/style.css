@@ -246,7 +246,7 @@ pre code {
    2. Helpers
    ========================================================================== */
 
-.ar{
+.ar {
     font-family: 'Almarai', sans-serif !important;
 }
 
@@ -1882,6 +1882,15 @@ body.js-page-in-anim-active.js-page-out .pointer {
     right: 100px;
     top: 15px;
     font-size: 22px;
+    -webkit-transform: translateY(110%);
+    transform: translateY(110%);
+    transition: 1s cubic-bezier(.767, .01, .18, 1.01);
+}
+
+.js-page-in-out .lang-switch {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    transition-delay: 1s;
 }
 
 .color-mix-blend-normal.header-logo {
@@ -1890,6 +1899,13 @@ body.js-page-in-anim-active.js-page-out .pointer {
 
 .js-page-in-out .header-logo {
     pointer-events: auto;
+}
+
+.lang__box {
+    overflow: hidden;
+    height: 50px;
+    position: absolute;
+    width: 100vw;
 }
 
 .header-logo__box {
