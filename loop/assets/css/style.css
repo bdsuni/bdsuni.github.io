@@ -7067,36 +7067,30 @@ textarea.form-input {
     font-size: 58px;
 }
 
-.app-label:hover {
-    transition: all 0.3s ease;
-    font-size: 64px;
-}
-
 .loop-app {
-    transform: scale(0.4);
-    transform-origin: top;
-    max-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/*
-.app-slider:before {
-    content: '';
-    background: url(../images/app/ip12.png);
-    width: 363px;
-    height: 783px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    z-index: 3;
+.app-slider,
+.app-slider .swiper-wrapper {
+    max-width: 220px;
 }
-*/
 
-/*
+@media only screen and (max-width: 999px) {
+
+    .app-slider,
+    .app-slider .swiper-wrapper {
+        max-width: 110px;
+    }
+}
+
 .app-slider img {
-    width: 363px;
-    height: 783px;
+    width: 100%;
+    height: 100%;
 }
-*/
+
 .m-h-50 {
     max-height: 90vh;
 }
@@ -7147,19 +7141,8 @@ textarea.form-input {
 .how-to {
     background-image: url(../images/backgrounds/escooter-bg.svg);
     background-repeat: no-repeat;
-    background-position: right;
-}
-
-@media only screen and (max-width: 1400px) {
-    .loop-app {
-        transform: scale(0.32)
-    }
-}
-
-@media only screen and (max-width: 1400px) and (orientation : portrait) {
-    .loop-app {
-        transform: scale(0.8)
-    }
+    background-position: top right;
+    background-size: 45%;
 }
 
 @media only screen and (max-width: 999px) {
@@ -7194,6 +7177,7 @@ textarea.form-input {
         padding-top: 10px;
     }
 
+    .padding-top-100,
     .padding-top-120,
     .padding-top-bottom-60,
     .padding-top-bottom-120,
@@ -7201,11 +7185,13 @@ textarea.form-input {
         padding-top: 20px;
     }
 
+    .padding-bottom-60,
     .padding-top-bottom-60,
     .padding-top-bottom-120,
+    .padding-bottom-120,
     .padding-top-bottom-150,
     .padding-bottom-150 {
-        padding-bottom: 10px;
+        padding-bottom: 30px;
     }
 
     .margin-top-120 {
@@ -7219,11 +7205,6 @@ textarea.form-input {
     .headline-m,
     .headline-xs {
         margin-top: 50px;
-    }
-
-    .body-text-m {
-        max-width: 80vw;
-        margin-left: 10vw;
     }
 
     .body-text-m-b {
@@ -7302,10 +7283,6 @@ textarea.form-input {
         padding-right: 20px;
     }
 
-    .loop-app {
-        transform: scale(1);
-    }
-
     .phone-no-m-p {
         margin: 0;
         margin-top: 0;
@@ -7324,14 +7301,14 @@ textarea.form-input {
     }
 
     .how-to {
-        background-position: 150px -10px;
-        background-size: 70%;
+        background-position: 230px 0;
+        background-size: 40%;
     }
 
     .title-offset {
         text-align: center;
         font-size: 70px;
-        padding-top: 110px;
+        padding-top: 130px;
     }
 
     .video-bg {
@@ -7343,7 +7320,8 @@ textarea.form-input {
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
     }
-    .phone-f-b-33{
+
+    .phone-f-b-33 {
         flex-basis: 33.3%
     }
 }
@@ -7385,6 +7363,7 @@ textarea.form-input {
         height: 70vh;
     }
 }
-.w-a-imp{
-    width: auto !important;
+
+.w-a-imp {
+    width: 100% !important;
 }

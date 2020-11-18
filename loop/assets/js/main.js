@@ -341,6 +341,7 @@ $(function () {
             });
 
             var appSwiper = new Swiper('.app-slider', {
+                slidesPerView: 1,
                 effect: 'flip',
                 pagination: {
                     el: '.app-pagination',
@@ -350,23 +351,31 @@ $(function () {
                         switch (index) {
                             case 0:
                                 return `<div class="four-columns find ` + className + ` phone-f-b-33">
-                                                    <h3 class="text-color-blue app-label text-center">Find</h3>
-                                                    <p class="body-text-s text-color-black margin-top-10 max-width-400 text-center">In a hurry <br>just find a Loop <br>near by you.</p>
-                                                </div>`
+                                            <h3 class="text-color-blue app-label text-center">Find</h3>
+                                            <p class="body-text-s text-color-black margin-top-10 text-center" style="line-height: 1.5">In a hurry <br>just find a Loop <br>near by you.</p>
+                                        </div>`;
                             case 1:
                                 return `<div class="four-columns scan ` + className + ` phone-f-b-33">
-                                                    <h3 class="text-color-blue app-label text-center">Scan</h3>
-                                                    <p class="body-text-s text-color-black margin-top-10 max-width-400 text-center">Scan the Loop<br> Scooter with your <br>mobile or type in <br> code to activate.</p>
-                                                </div>`;
+                                            <h3 class="text-color-blue app-label text-center">Scan</h3>
+                                            <p class="body-text-s text-color-black margin-top-10 text-center"style=":1.5">Scan the Loop <br>Scooter with your <br>mobile or type in <br>code to activate.</p>
+                                        </div>`;
                             case 2:
                                 return `<div class="four-columns ride ` + className + ` phone-f-b-33">
-                                                    <h3 class="text-color-blue app-label text-center">Ride</h3>
-                                                    <p class="body-text-s text-color-black margin-top-10 max-width-400 text-center">Fasten helmet,<br> hop on scooter <br>and start journey.</p>
-                                                </div>`;
+                                            <h3 class="text-color-blue app-label text-center">Ride</h3>
+                                            <p class="body-text-s text-color-black margin-top-10 text-center"style=":1.5">Fasten helmet, <br>hop on scooter <br>and start journey.</p>
+                                        </div>`;
                             default:
                                 return '<span class="app-slider-bullet ' + className + '">' + (index + 1) + '</span>';
                         }
                     },
+                },
+                width: 110,
+                height: 240,
+                breakpoints: {
+                    769: {
+                        width: 220,
+                        height: 480,
+                    }
                 },
             });
 
