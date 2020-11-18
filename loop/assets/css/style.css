@@ -1877,7 +1877,7 @@ body.js-page-in-anim-active.js-page-out .pointer {
 }
 
 .lang-switch {
-    position: fixed;
+    position: absolute;
     z-index: 10;
     right: 100px;
     top: 15px;
