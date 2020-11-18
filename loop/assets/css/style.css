@@ -7121,9 +7121,9 @@ textarea.form-input {
 
 
 
-.blue-box-border {
-    border: 1px solid #02b5df;
-    border-radius: 4px;
+.do-box{
+    color: #fff;
+    border-radius: 8px;
     min-height: 150px;
     display: flex;
     justify-content: center;
@@ -7133,9 +7133,17 @@ textarea.form-input {
     transition: transform 0.3s ease;
 }
 
-.blue-box-border:hover {
+.do-box:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
+}
+
+.do-box-green {
+    background-image: linear-gradient(180deg, #18ab99 0%, #04D7A5 100%);
+}
+
+.do-box-red {
+    background-image: linear-gradient(180deg, #FF7492 0%, #FF4059 100%);
 }
 
 .how-to {
