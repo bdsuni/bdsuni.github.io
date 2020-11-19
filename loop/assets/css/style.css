@@ -7421,3 +7421,14 @@ textarea.form-input {
         background-position: 200px;
     }
 }
+
+
+.article-container {
+    display: contents;
+}
+
+@media only screen and (max-width: 766px) {
+    .article-container {
+        display: flex;
+    }
+}
