@@ -373,9 +373,13 @@ $(function () {
                 height: 240,
                 breakpoints: {
                     769: {
+                        width: 165,
+                        height: 360,
+                    },
+                    1600: {
                         width: 220,
                         height: 480,
-                    }
+                    },
                 },
             });
 
