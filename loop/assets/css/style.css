@@ -7419,12 +7419,11 @@ textarea.form-input {
 
 @media only screen and (max-width: 699px) {
 
-    .contact-bg,
-    .do-bg {
-        background-image: url(../images/backgrounds/moving.svg);
-        background-repeat: no-repeat;
-        background-position: 200px;
+    .contact-bg .headline-m,
+    .do-bg .headline-m {
+        font-size: 20px;
     }
+    
 }
 
 
