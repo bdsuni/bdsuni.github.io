@@ -7436,3 +7436,13 @@ textarea.form-input {
         display: flex;
     }
 }
+
+.upper-round:before{
+    content: '';
+    height: 25px;
+    width: 100vw;
+    background: inherit;
+    display: inline-block;
+    border-radius: 15px 15px 0 0;
+    margin-top: -15px;
+}
