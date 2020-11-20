@@ -7340,7 +7340,7 @@ textarea.form-input {
     .how-to {
         background-position: bottom center;
         background-size: 100%;
-        min-height: 84vh;
+        min-height: 90vh;
     }
     .section-bg-light .anim-img-reveal:before, body .content-bg-light .anim-img-reveal:before{
         background-color: #00000000;
