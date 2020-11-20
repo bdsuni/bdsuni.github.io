@@ -7338,8 +7338,13 @@ textarea.form-input {
     }
 
     .how-to {
-        background-position: 230px 0;
-        background-size: 40%;
+        background-position: bottom center;
+        background-size: 100%;
+        min-height: 84vh;
+    }
+    .section-bg-light .anim-img-reveal:before, body .content-bg-light .anim-img-reveal:before{
+        background-color: #00000000;
+        background-color: rgba(0,0,0,0);
     }
 
     .title-offset {
