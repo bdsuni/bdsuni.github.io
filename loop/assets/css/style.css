@@ -7342,9 +7342,11 @@ textarea.form-input {
         background-size: 100%;
         min-height: 90vh;
     }
-    .section-bg-light .anim-img-reveal:before, body .content-bg-light .anim-img-reveal:before{
+
+    .section-bg-light .anim-img-reveal:before,
+    body .content-bg-light .anim-img-reveal:before {
         background-color: #00000000;
-        background-color: rgba(0,0,0,0);
+        background-color: rgba(0, 0, 0, 0);
     }
 
     .title-offset {
@@ -7361,6 +7363,17 @@ textarea.form-input {
         top: 14%;
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
+    }
+
+    .phone-rounded:before {
+        content: '';
+        height: 25px;
+        width: 100vw;
+        background: #ffffff;
+        display: inline-block;
+        border-radius: 15px 15px 0 0;
+        top: 90px;
+        position: absolute;
     }
 
     .phone-f-b-33 {
@@ -7423,7 +7436,7 @@ textarea.form-input {
     .do-bg .headline-m {
         font-size: 20px;
     }
-    
+
 }
 
 
@@ -7437,7 +7450,7 @@ textarea.form-input {
     }
 }
 
-.upper-round:before{
+.upper-round:before {
     content: '';
     height: 25px;
     width: 100vw;
