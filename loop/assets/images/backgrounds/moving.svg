@@ -14,6 +14,21 @@
             }
         }
 
+        .st32 {
+            fill: url(#SVGID_1_);
+        }
+
+        .st33 {
+            fill: url(#SVGID_2_);
+        }
+
+        .st35 {
+            font-size: 42px;
+            fill: #FFFFFF;
+            font-family: 'Lato', sans-serif;
+            font-weight: 700;
+        }
+
     </style>
     <rect x="-66.8" y="-7" fill="rgb(2,181,223)" stroke="rgb(2,181,223)" stroke-width="3" width="119.1" height="513" />
     <rect x="714" y="-6" fill="rgb(2,181,223)" stroke="rgb(2,181,223)" stroke-width="3" width="114.4" height="513" />
@@ -844,4 +859,18 @@
             </g>
         </g>
     </g>
+    <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="125.5" y1="161" x2="125.5" y2="38">
+        <stop offset="0" style="stop-color:#3C6000" />
+        <stop offset="1" style="stop-color:#00CE81" />
+    </linearGradient>
+    <path class="st32" d="M199,161H99.2C66.6,161,40,134.4,40,101.8V84.7C40,59,61,38,86.7,38h37c48.1,0,87.4,39.3,87.4,87.4V149
+	C211,155.6,205.6,161,199,161z" />
+    <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="617.5" y1="161" x2="617.5" y2="38">
+        <stop offset="0" style="stop-color:#6A1A00" />
+        <stop offset="1" style="stop-color:#D40000" />
+    </linearGradient>
+    <path class="st33" d="M642.1,161H544c-6.6,0-12-5.4-12-12V96c0-31.9,26.1-58,58-58h70.2c23.5,0,42.8,19.3,42.8,42.8v19.3
+	C703,133.6,675.6,161,642.1,161z" />
+    <text transform="matrix(1 0 0 1 90.1299 116.8115)" class="st34 st35">DO</text>
+    <text transform="matrix(1 0 0 1 551.646 116.8115)" class="st34 st35">DON'T</text>
 </svg>
