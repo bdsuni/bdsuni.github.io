@@ -7369,7 +7369,7 @@ textarea.form-input {
         content: '';
         height: 25px;
         width: 100vw;
-        background: #ffffff;
+        background: #f5f5f5;
         display: inline-block;
         border-radius: 15px 15px 0 0;
         top: 90px;
