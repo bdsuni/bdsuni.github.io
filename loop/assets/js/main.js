@@ -382,6 +382,49 @@ $(function () {
                     },
                 },
             });
+            
+            var appSwiperAr = new Swiper('.app-slider-ar', {
+                slidesPerView: 1,
+                effect: 'flip',
+                pagination: {
+                    el: '.app-pagination-ar',
+                    clickable: true,
+                    dynamicBullets: true,
+                    renderBullet: function (index, className) {
+                        switch (index) {
+                            case 0:
+                                return `<div class="four-columns find ` + className + ` phone-f-b-33">
+                                            <h3 class="text-color-blue app-label text-center">FFind</h3>
+                                            <p class="body-text-s text-color-black margin-top-10 text-center" style="line-height: 1.5">In a hurry <br>just find a Loop <br>near by you.</p>
+                                        </div>`;
+                            case 1:
+                                return `<div class="four-columns scan ` + className + ` phone-f-b-33">
+                                            <h3 class="text-color-blue app-label text-center">Scan</h3>
+                                            <p class="body-text-s text-color-black margin-top-10 text-center"style=":1.5">Scan the Loop <br>Scooter with your <br>mobile or type in <br>code to activate.</p>
+                                        </div>`;
+                            case 2:
+                                return `<div class="four-columns ride ` + className + ` phone-f-b-33">
+                                            <h3 class="text-color-blue app-label text-center">Ride</h3>
+                                            <p class="body-text-s text-color-black margin-top-10 text-center"style=":1.5">Fasten helmet, <br>hop on scooter <br>and start journey.</p>
+                                        </div>`;
+                            default:
+                                return '<span class="app-slider-bullet ' + className + '">' + (index + 1) + '</span>';
+                        }
+                    },
+                },
+                width: 110,
+                height: 240,
+                breakpoints: {
+                    769: {
+                        width: 165,
+                        height: 360,
+                    },
+                    1600: {
+                        width: 220,
+                        height: 480,
+                    },
+                },
+            });
 
             /* 4. Isotope */
             $('.js-isotope-grid-box').isotope({
