@@ -394,18 +394,23 @@ $(function () {
                         switch (index) {
                             case 0:
                                 return `<div class="four-columns find ` + className + ` phone-f-b-33">
-                                            <h3 class="text-color-blue app-label text-center">FFind</h3>
-                                            <p class="body-text-s text-color-black margin-top-10 text-center" style="line-height: 1.5">In a hurry <br>just find a Loop <br>near by you.</p>
+                                            <h3 class="text-color-blue app-label text-center ar">تجد</h3>
+                                            <p class="body-text-s text-color-black margin-top-10 text-center ar" style="line-height: 1.5">حدد أقرب <br> سكوتر إليك بسهولة <br> وتوجه إليه</p>
                                         </div>`;
                             case 1:
                                 return `<div class="four-columns scan ` + className + ` phone-f-b-33">
-                                            <h3 class="text-color-blue app-label text-center">Scan</h3>
-                                            <p class="body-text-s text-color-black margin-top-10 text-center"style=":1.5">Scan the Loop <br>Scooter with your <br>mobile or type in <br>code to activate.</p>
+                                            <h3 class="text-color-blue app-label text-center ar">مسح</h3>
+                                            <p class="body-text-s text-color-black margin-top-10 text-center ar"style=":1.5"> امسح الكيو
+آر كود الخاص بالسكوتر أو <br> 
+اكتب الكود الرقمي في  <br> 
+الخانة الموضحة لتفعيل السكوتر</p>
                                         </div>`;
                             case 2:
                                 return `<div class="four-columns ride ` + className + ` phone-f-b-33">
-                                            <h3 class="text-color-blue app-label text-center">Ride</h3>
-                                            <p class="body-text-s text-color-black margin-top-10 text-center"style=":1.5">Fasten helmet, <br>hop on scooter <br>and start journey.</p>
+                                            <h3 class="text-color-blue app-label text-center ar">اركب</h3>
+                                            <p class="body-text-s text-color-black margin-top-10 text-center ar"style=":1.5">ارتدي خوذتك
+واركب السكوتر <br>
+واستمتع برحلتك </p>
                                         </div>`;
                             default:
                                 return '<span class="app-slider-bullet ' + className + '">' + (index + 1) + '</span>';
