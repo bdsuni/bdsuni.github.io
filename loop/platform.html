@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Beautevil Design Studio">
+    <meta name="description" content="Qatar's best Escooter sharing app tailored in State of Qatar with feasible and easy available ride options">
+    <meta name="keywords" content="loop, e-scooter">
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
+
+    <title>Platform | Loop Mobility</title>
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- styles -->
+    <link href="assets/css/plugins.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfqzaUZAAAAAAkJyFKXU9QoXAa0On8LcKCe3d6p"></script>
+</head>
+
+<body class="preloader cursor-anim-enable">
+    <div class="preloader__out-overlay"></div>
+
+    <!-- preloader-loading start -->
+    <div class="preloader__loading in">
+        <div class="preloader__loading-anim" data-splitting>Looping...</div>
+    </div>
+    <div class="preloader__loading out">
+        <div class="preloader__loading-anim" data-splitting>Looping...</div>
+    </div><!-- preloader-loading end -->
+
+    <!-- pointer start -->
+    <div class="pointer js-pointer" id="js-pointer">
+        <div class="pointer__inner drag">drag</div>
+        <i class="pointer__inner fas fa-search"></i>
+    </div><!-- pointer end -->
+
+    <!-- header start -->
+    <header class="fixed-header">
+        <!-- logo start -->
+        <a href="index.html" class="js-pointer-large js-animsition-link">
+            <div class="color-mix-blend-normal header-logo">
+                <div class="header-logo__box">
+                    <img class="header-logo__img no-phone" src="assets/images/logo/icon.svg" alt="logo" style="height: 40px">
+                    <img class="header-logo__img only-phone" src="assets/images/logo/icon.png" alt="logo">
+                </div>
+            </div>
+        </a>
+        <!-- logo end -->
+        <div class="lang__box">
+            <a href="#" class="lang-switch ar js-pointer-large">عربي</a>
+        </div>
+        <!-- menu-icon start -->
+        <div class="menu-icon js-menu-open-close js-pointer-large">
+            <div class="menu-icon__box">
+                <span class="menu-icon__inner"></span>
+                <span class="menu-icon__close"></span>
+            </div>
+        </div><!-- menu-icon end -->
+    </header><!-- header end -->
+
+    <!-- navigation overlay -->
+    <div class="nav-overlay"></div>
+    <!-- navigation start -->
+    <nav class="nav-container js-dropdown-active-box">
+        <!-- nav-box start -->
+        <div class="container small nav-box">
+            <!-- dropdown close btn start -->
+            <div class="dropdown-close">
+                <div class="dropdown-close__inner js-dropdown-close js-pointer-large">
+                    <span class="dropdown-close__arrow"></span>
+                </div>
+            </div><!-- dropdown close btn end -->
+
+            <!-- menu-box start -->
+            <ul class="menu-box nav-bg-overlay-box">
+                <!-- nav-btn-box start -->
+                <li class="nav-btn-box js-nav-bg-change js-nav-bg-active">
+                    <a href="index.html#up" class="nav-btn dropdown-hidden-btn js-menu-open-close js-pointer-large" target="_blank">
+                        <span class="nav-btn__inner" data-text="Home">Home</span>
+                    </a>
+                    <div class="nav-bg-box">
+                        <div class="nav-bg" style="background-image: url(assets/images/backgrounds/e-scooter.jpg);"></div>
+                    </div>
+                </li><!-- nav-btn-box end -->
+
+                <!-- nav-btn-box start -->
+                <li class="nav-btn-box js-nav-bg-change">
+                    <a href="index.html#who" class="nav-btn dropdown-hidden-btn js-menu-open-close js-pointer-large" target="_blank">
+                        <span class="nav-btn__inner" data-text="About">About</span>
+                    </a>
+                    <div class="nav-bg-box">
+                        <div class="nav-bg" style="background-image: url(assets/images/backgrounds/hero2.jpg);"></div>
+                    </div>
+                </li><!-- nav-btn-box end -->
+
+                <!-- nav-btn-box start -->
+
+
+                <li class="nav-btn-box js-nav-bg-change">
+                    <a href="dosanddonts.html" class="nav-btn dropdown-hidden-btn js-animsition-link js-pointer-large" target="_blank">
+                        <span class="nav-btn__inner" data-text="Do's and Don'ts">Do's and Don'ts</span>
+                    </a>
+                    <div class="nav-bg-box">
+                        <div class="nav-bg" style="background-image: url(assets/images/backgrounds/map/map.jpg);"></div>
+                    </div>
+                </li>
+
+                <!-- nav-btn-box end -->
+
+                <!-- nav-btn-box start -->
+                <li class="nav-btn-box js-nav-bg-change">
+                    <a href="index.html#news" class="nav-btn dropdown-hidden-btn js-menu-open-close js-pointer-large" target="_blank">
+                        <span class="nav-btn__inner" data-text="News">News</span>
+                    </a>
+                    <div class="nav-bg-box">
+                        <div class="nav-bg" style="background-image: url(assets/images/backgrounds/explore.jpg);"></div>
+                    </div>
+                </li><!-- nav-btn-box end -->
+
+                <!-- nav-btn-box start -->
+                <!--
+                <li class="nav-btn-box js-nav-bg-change">
+                    <a href="contact.html" class="nav-btn dropdown-hidden-btn js-menu-open-close js-pointer-large" target="_blank">
+                        <span class="nav-btn__inner" data-text="Contact">Contact</span>
+                    </a>
+                    <div class="nav-bg-box">
+                        <div class="nav-bg" style="background-image: url(assets/images/backgrounds/touch.jpg);"></div>
+                    </div>
+                </li>
+-->
+                <!-- nav-btn-box end -->
+
+                <!-- nav-btn-box start -->
+                <li class="nav-btn-box js-nav-bg-change">
+                    <a href="contact.html" class="nav-btn dropdown-hidden-btn js-menu-open-close js-pointer-large" target="_blank">
+                        <span class="nav-btn__inner" data-text="Partnership">Partnership</span>
+                    </a>
+                    <div class="nav-bg-box">
+                        <div class="nav-bg" style="background-image: url(assets/images/backgrounds/touch.jpg);"></div>
+                    </div>
+                </li><!-- nav-btn-box end -->
+            </ul><!-- menu-box end -->
+        </div><!-- nav-box end -->
+    </nav><!-- navigation end -->
+
+    <!-- scroll-content start -->
+    <div id="js-scroll-content">
+        <!-- js-animsition-overlay start -->
+        <div class="js-animsition-overlay" data-animsition-overlay="true">
+            <!-- main start -->
+            <main class="main-content">
+                <!-- page head start -->
+                <section id="up" class="section-bg-light height-100vh" data-scroll-section>
+                    <div class="flex-container container full flex-align-center phone-reverse-column">
+                        <div class="six-columns phone-padding-30">
+                            <div class="d-inline-block">
+                                <div class="scrollanim-activate" data-scroll data-scroll-offset="20%">
+                                    <div class="hidden-box padding-left-40 phone-no-m-p text-color-black">
+                                        <h2 class="headline-xl anim-text-slide">Platform</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column-l-margin-40 margin-top-20">
+                                <p class="body-text-l max-width-400 d-inline-block anim-split-lines text-color-black" data-scroll data-scroll-offset="20%">Loop Platform enables independent operators to manage their own fleet of shared e-scooters.</p>
+                            </div>
+                        </div>
+                        <div class="six-columns">
+                            <div class="height-100vh phone-100-50" style="background: url(assets/images/backgrounds/explore.jpg)"></div>
+                        </div>
+                    </div>
+                </section><!-- page head end -->
+
+            </main><!-- main end -->
+
+            <!-- footer start -->
+            <footer class="section-bg-blue yellow-text" data-scroll-section>
+                <!-- container start -->
+                <div class="container padding-top-bottom-20" data-scroll data-scroll-speed="-4" data-scroll-position="bottom">
+                    <!-- flex-container start -->
+                    <div class="flex-container flex-align-center only-phone">
+                        <!-- column start -->
+                        <div class="ten-columns padding-top-90" style="margin-bottom: 20px">
+                            <h4 class="column-l-r-margin-10 headline-s headline-uppercase">
+                                Qatar's First Ever <br> Escooter <br> sharing app
+                            </h4>
+                            <!-- flex-container start -->
+                            <div class="flex-container padding-top-30">
+                                <!-- column start -->
+                                <div class="four-columns padding-top-60">
+                                    <div class="column-l-r-margin-10">
+                                        <div class="headline-xxxxs">Email:</div>
+                                        <div class="margin-top-20">
+                                            <a href="mailto:support@loopmobility.co" class="line-btn js-pointer-small body-text-m-b" style="margin-left: 20px;">support@loopmobility.co</a>
+                                            <div class="margin-top-5">
+                                                <a href="mailto:partnership@loopmobility.co" class="line-btn js-pointer-small body-text-m-b" style="margin-left: 20px;">partnership@loopmobility.co</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- column end -->
+
+                            </div><!-- flex-container end -->
+                        </div><!-- column end -->
+
+                        <!-- column start -->
+                        <div class="two-columns phone-fb-50">
+                            <!-- column start -->
+                            <div class="two-columns phone-no-m-p">
+                                <ul class="list list_row list_margin-30px">
+                                    <li class="list__item">
+                                        <a href="https://www.facebook.com/LoopMobility" class="flip-btn js-pointer-small" data-splitting>Facebook</a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a href="https://www.linkedin.com/company/loop-mobility/" class="flip-btn js-pointer-small" data-splitting>LinkedIn</a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a href="https://www.instagram.com/loopmobility/" class="flip-btn js-pointer-small" data-splitting>Instagram</a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a href="https://twitter.com/loopmobility" class="flip-btn js-pointer-small" data-splitting>Twitter</a>
+                                    </li>
+                                </ul><!-- footer-social end -->
+                            </div><!-- column end -->
+
+                            <!-- column start -->
+                            <div class="four-columns phone-no-m-p">
+
+                            </div><!-- column end -->
+                        </div>
+                        <div class="two-columns padding-top-204 phone-fb-50">
+                            <img src="assets/images/backgrounds/end-footer.svg" alt="scooter" class="max-width-600">
+                        </div><!-- column end -->
+
+
+
+
+
+
+
+
+
+
+                        <!-- column start -->
+                        <div class="twelve-columns">
+                            <div class="column-l-r-margin-10 padding-top-30 pos-rel">
+                                <div class="anim-line-top" data-scroll data-scroll-offset="5%"></div>
+                                <!-- footer-social start -->
+                                <div class="column-l-r-margin-10">
+                                    <a href="https://apps.apple.com/in/app/loop-dreams-on-wheels/id1504675606">
+                                        <img src="assets/images/app/white-app-en.png" alt="App" style="height: 40px;width: auto;">
+                                    </a>
+                                    <a href="https://play.google.com/store/apps/details?id=com.Loop.app">
+                                        <img src="assets/images/app/white-play-en.png" alt="Play" style="height: 40px;width: auto;">
+                                    </a>
+                                </div>
+                            </div>
+                        </div><!-- column end -->
+
+                        <!-- column start -->
+                        <div class="twelve-columns padding-top-30">
+                            <div class="column-l-r-margin-10 pos-rel">
+                                <p class="copyright margin-right-30 body-text-xs-b">
+                                    &copy; Copyright 2020 Loop Mobility
+                                </p>
+                                <!-- to top btn start -->
+                                <a href="#up" class="scroll-to-btn js-pointer-large" data-scroll data-scroll-repeat data-scroll-to>
+                                    <span class="scroll-to-btn__arrow"></span>
+                                </a><!-- to top btn end -->
+                            </div>
+                        </div><!-- column end -->
+                    </div><!-- flex-container end -->
+
+
+
+
+                    <div class="flex-container flex-align-center no-phone">
+                        <!-- column start -->
+                        <div class="six-columns padding-top-90" style="margin-bottom: 20px">
+                            <h4 class="column-l-r-margin-10 headline-s headline-uppercase">
+                                Qatar's First Ever <br> Escooter <br> sharing app
+                            </h4>
+                            <!-- flex-container start -->
+                            <div class="flex-container padding-top-30">
+                                <!-- column start -->
+                                <div class="four-columns padding-top-60">
+                                    <div class="column-l-r-margin-10">
+                                        <div class="headline-xxxxs">Email:</div>
+                                        <div class="margin-top-20">
+                                            <a href="mailto:support@loopmobility.co" class="line-btn js-pointer-small body-text-m-b">support@loopmobility.co</a>
+                                            <div class="margin-top-5">
+                                                <a href="mailto:partnership@loopmobility.co" class="line-btn js-pointer-small body-text-m-b">partnership@loopmobility.co</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- column end -->
+
+                            </div><!-- flex-container end -->
+                        </div><!-- column end -->
+
+                        <!-- column start -->
+                        <div class="two-columns phone-fb-50">
+                            <!-- column start -->
+                            <div class="two-columns phone-no-m-p">
+                                <ul class="list list_row list_margin-30px">
+                                    <li class="list__item">
+                                        <a href="https://www.facebook.com/LoopMobility" class="flip-btn js-pointer-small" data-splitting>Facebook</a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a href="https://www.linkedin.com/company/loop-mobility/" class="flip-btn js-pointer-small" data-splitting>LinkedIn</a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a href="https://www.instagram.com/loopmobility/" class="flip-btn js-pointer-small" data-splitting>Instagram</a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a href="https://twitter.com/loopmobility" class="flip-btn js-pointer-small" data-splitting>Twitter</a>
+                                    </li>
+                                </ul><!-- footer-social end -->
+                            </div><!-- column end -->
+
+                            <!-- column start -->
+                            <div class="four-columns phone-no-m-p">
+
+                            </div><!-- column end -->
+                        </div>
+                        <div class="four-columns padding-top-204 phone-fb-50">
+                            <img src="assets/images/backgrounds/end-footer.svg" alt="scooter" class="max-width-600">
+                        </div><!-- column end -->
+
+
+
+
+
+
+
+
+
+
+                        <!-- column start -->
+                        <div class="twelve-columns">
+                            <div class="column-l-r-margin-10 padding-top-30 pos-rel">
+                                <div class="anim-line-top" data-scroll data-scroll-offset="5%"></div>
+                                <!-- footer-social start -->
+                                <div class="column-l-r-margin-10">
+                                    <a href="https://apps.apple.com/in/app/loop-dreams-on-wheels/id1504675606">
+                                        <img src="assets/images/app/white-app-en.png" alt="App" style="height: 40px;width: auto;">
+                                    </a>
+                                    <a href="https://play.google.com/store/apps/details?id=com.Loop.app">
+                                        <img src="assets/images/app/white-play-en.png" alt="Play" style="height: 40px;width: auto;">
+                                    </a>
+                                </div>
+                            </div>
+                        </div><!-- column end -->
+
+                        <!-- column start -->
+                        <div class="twelve-columns padding-top-30">
+                            <div class="column-l-r-margin-10 pos-rel">
+                                <p class="copyright margin-right-30 body-text-xs-b">
+                                    &copy; Copyright 2020 Loop Mobility
+                                </p>
+                                <!-- to top btn start -->
+                                <a href="#up" class="scroll-to-btn js-pointer-large" data-scroll data-scroll-repeat data-scroll-to>
+                                    <span class="scroll-to-btn__arrow"></span>
+                                </a><!-- to top btn end -->
+                            </div>
+                        </div><!-- column end -->
+                    </div><!-- flex-container end -->
+                </div><!-- container end -->
+            </footer><!-- footer end -->
+        </div><!-- js-animsition-overlay end -->
+    </div><!-- scroll-content end -->
+
+    <!-- scripts -->
+
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script type="text/javascript">
+        window.supportpalAsyncInit = function() {
+            SupportPal.mount({
+                "baseURL": "https://support.loopmobility.co/en/helpwidget",
+                "hash": "SRhhnxRpqZ",
+                "knowledgebase": {
+                    "enabled": false
+                },
+                "submitTicket": {
+                    "enabled": true,
+                    "departmentId": "1",
+                    "subject": true
+                },
+                "type": "popup",
+                "position": "right",
+                "colour": "#f7c016",
+                "buttonIcon": "bubble2"
+            });
+        };
+
+    </script>
+    <script async src='https://support.loopmobility.co/app/Modules/Ticket/Channels/HelpWidget/Views/js/supportpal.min.js?v=3.2.1'></script>
+</body>
+
+</html>

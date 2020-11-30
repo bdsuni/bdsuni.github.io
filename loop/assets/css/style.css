@@ -959,6 +959,7 @@ pre code {
 
 .container.full {
     max-width: 100%;
+    width: 100%;
 }
 
 .container.small {
@@ -7525,6 +7526,20 @@ textarea.form-input {
     .contact-bg .headline-m,
     .do-bg .headline-m {
         font-size: 20px;
+    }
+    .phone-reverse-column{
+        flex-direction: column-reverse;
+    }
+    .phone-100-50{
+        max-height: 50vh;
+        height: 50vh;
+        width: 100vw;
+    }
+    .phone-text-center{
+        text-align: center;
+    }
+    .phone-padding-30{
+        padding: 30px;
     }
 
 }
