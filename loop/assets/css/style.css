@@ -7489,9 +7489,8 @@ textarea.form-input {
 
 @media only screen and (min-width: 1900px) {
     .int-map {
-        left: -40%;
-        top: -70%;
-        height: 70vh;
+        top: -30vh;
+        height: 80vh;
     }
 
     .video-bg {
