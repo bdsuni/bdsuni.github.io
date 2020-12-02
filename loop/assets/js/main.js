@@ -210,7 +210,7 @@ $(function () {
             var carouselSwiperBg = new Swiper(".js-carousel-slider-bg", {
                 speed: 1300,
                 slidesPerView: 1,
-                spaceBetween: 500,
+                spaceBetween: 800,
                 parallax: true
             });
 
