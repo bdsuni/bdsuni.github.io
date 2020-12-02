@@ -394,23 +394,18 @@ $(function () {
                         switch (index) {
                             case 0:
                                 return `<div class="four-columns find ` + className + ` phone-f-b-33">
-                                            <h3 class="text-color-blue app-label text-center ar">تجد</h3>
-                                            <p class="body-text-s text-color-black margin-top-10 text-center ar" style="line-height: 1.5">حدد أقرب <br> سكوتر إليك بسهولة <br> وتوجه إليه</p>
+                                            <h3 class="text-color-blue app-label text-center ar">إيجاد</h3>
+                                            <p class="body-text-s text-color-black margin-top-10 text-center ar" style="line-height: 1.5">حدد اقرب  <br> إسكوتر بسهولة<br> وتوجه إليه </p>
                                         </div>`;
                             case 1:
                                 return `<div class="four-columns scan ` + className + ` phone-f-b-33">
                                             <h3 class="text-color-blue app-label text-center ar">مسح</h3>
-                                            <p class="body-text-s text-color-black margin-top-10 text-center ar"style=":1.5"> امسح الكيو
-آر كود الخاص بالسكوتر أو <br> 
-اكتب الكود الرقمي في  <br> 
-الخانة الموضحة لتفعيل السكوتر</p>
+                                            <p class="body-text-s text-color-black margin-top-10 text-center ar"style=":1.5">إمسح الكيو آر كود  <br>الخاص بالسكوتر أو أكتب رقمها<br> لتفعيل السكوتر</p>
                                         </div>`;
                             case 2:
                                 return `<div class="four-columns ride ` + className + ` phone-f-b-33">
-                                            <h3 class="text-color-blue app-label text-center ar">اركب</h3>
-                                            <p class="body-text-s text-color-black margin-top-10 text-center ar"style=":1.5">ارتدي خوذتك
-واركب السكوتر <br>
-واستمتع برحلتك </p>
+                                            <h3 class="text-color-blue app-label text-center ar">قيادة</h3>
+                                            <p class="body-text-s text-color-black margin-top-10 text-center ar"style=":1.5">إرتدي خوذتك <br> و إركب الإسكوتر <br>و تمتع برحلتك</p>
                                         </div>`;
                             default:
                                 return '<span class="app-slider-bullet ' + className + '">' + (index + 1) + '</span>';
