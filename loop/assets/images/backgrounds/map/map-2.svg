@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2560 1479" style="enable-background:new 0 0 2560 1479;" xml:space="preserve">
+    <g id="Group_1_1_">
+        <g id="map_xA0_Image_1_">
+
+            <image style="overflow:visible;enable-background:new;" width="733" height="1435" id="map_xA0_Image" xlink:href="map-2.png" transform="matrix(1.0081 0 0 1.0081 2.5367 33.6987)">
+            </image>
+        </g>
+        <g id="icon_xA0_Image_1_">
+
+            <image style="overflow:visible;enable-background:new;" width="95" height="117" id="icon_xA0_Image" xlink:href="pin.png" transform="matrix(1.1242 0 0 1.1242 494.1019 699.2361)" id="pin1">
+            </image>
+        </g>
+        <g id="icon_copy_3_xA0_Image_1_">
+
+            <image style="overflow:visible;enable-background:new;" width="95" height="117" id="icon_copy_3_xA0_Image" xlink:href="pin.png" transform="matrix(1.1242 0 0 1.1242 466.1019 371.2361)" id="pin2">
+            </image>
+        </g>
+        <g id="icon_copy_xA0_Image_1_">
+
+            <image style="overflow:visible;enable-background:new;" width="95" height="117" id="icon_copy_xA0_Image" xlink:href="pin.png" transform="matrix(1.1285 0 0 1.1285 525.3949 736.9811)" id="pin3">
+            </image>
+        </g>
+        <g id="icon_copy_2_xA0_Image_1_">
+
+            <image style="overflow:visible;enable-background:new;" width="95" height="117" id="icon_copy_2_xA0_Image" xlink:href="pin.png" transform="matrix(1.1292 0 0 1.1292 475.8634 766.4423)" id="pin4">
+            </image>
+        </g>
+    </g>
+    <text transform="matrix(1 0 0 1 565.2863 447.8967)" class="map-label" id="label1">Al Bayt</text>
+    <text transform="matrix(1 0 0 1 493.6578 918.3035)" class="map-label" id="label2">Al Corniche</text>
+    <text transform="matrix(1 0 0 1 615.7476 823.4017)" class="map-label" id="label3">Westbay</text>
+    <text transform="matrix(1 0 0 1 578.1813 740.8463)" class="map-label" id="label4">Legatifiya</text>
+</svg>

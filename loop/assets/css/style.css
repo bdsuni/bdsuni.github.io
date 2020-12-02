@@ -249,10 +249,12 @@ pre code {
 .ar {
     font-family: 'Almarai', sans-serif !important;
 }
-.ltr{
+
+.ltr {
     direction: ltr;
 }
-.rtl{
+
+.rtl {
     direction: rtl;
 }
 
@@ -2843,7 +2845,7 @@ body.js-page-in-anim-active.js-page-out .pointer {
    11. Footer
    ========================================================================== */
 
-.footer-bg{
+.footer-bg {
     background-image: url(../images/backgrounds/footer.svg);
 }
 
@@ -6173,7 +6175,7 @@ input[type='submit']:hover {
     transition: 1s cubic-bezier(.225, 1, .316, .99);
 }
 
-.form-label-ar{
+.form-label-ar {
     position: absolute;
     right: 10px;
     top: 25px;
@@ -6193,12 +6195,12 @@ input[type='submit']:hover {
 }
 
 .form-anim-activate .form-label,
-.form-anim-activate .form-label-ar{
+.form-anim-activate .form-label-ar {
     transition-delay: 0s !important;
 }
 
 .form-input:invalid + .form-label,
-.form-input:invalid + .form-label-ar{
+.form-input:invalid + .form-label-ar {
     opacity: 1;
     -webkit-transform: translateY(0) scale(1);
     transform: translateY(0) scale(1);
@@ -6243,8 +6245,7 @@ input[type='submit']:hover {
     transition: 1s cubic-bezier(.225, 1, .316, .99);
 }
 
-.form-label.black:before
-.form-label-ar.black:before {
+.form-label.black:before .form-label-ar.black:before {
     color: #000;
 }
 
@@ -6584,7 +6585,7 @@ textarea.form-input {
 }
 
 .list_margin-30px.list_row .list__item {
-    margin-right: 40px;
+    margin-right: 50px;
     margin-bottom: 0;
 }
 
@@ -7095,12 +7096,12 @@ textarea.form-input {
 }
 
 .int-map {
-    width: 100vw;
-    height: 80vh;
+    width: 110vw;
+    height: 100vh;
     overflow: hidden;
     position: absolute;
-    left: -45px;
-    top: -123px;
+    left: -10vw;
+    top: -20vh;
 }
 
 .map-label {
@@ -7116,7 +7117,8 @@ textarea.form-input {
 
 #pin1:hover ~ #label1,
 #pin2:hover ~ #label2,
-#pin3:hover ~ #label3 {
+#pin3:hover ~ #label3,
+#pin4:hover ~ #label4 {
     opacity: 0.7;
     transition: opacity 0.3s ease-in-out;
 }
@@ -7371,10 +7373,16 @@ textarea.form-input {
         margin-right: 20px;
     }
 
+    .phone-h-70vh {
+        height: 70vh;
+        min-height: 70vh;
+        max-height: 70vh;
+    }
+
     .int-map {
-        width: 210vw;
-        left: -50vw;
-        top: 0;
+        width: 220vw;
+        left: 0;
+        top: -110px;
     }
 
     .map-label {
@@ -7435,6 +7443,7 @@ textarea.form-input {
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
     }
+
     .video-bg-ar {
         top: 12%;
     }
@@ -7449,6 +7458,7 @@ textarea.form-input {
         top: 90px;
         position: absolute;
     }
+
     .phone-rounded-ar:before {
         content: '';
         height: 25px;
@@ -7527,18 +7537,22 @@ textarea.form-input {
     .do-bg .headline-m {
         font-size: 20px;
     }
-    .phone-reverse-column{
+
+    .phone-reverse-column {
         flex-direction: column-reverse;
     }
-    .phone-100-50{
+
+    .phone-100-50 {
         max-height: 50vh;
         height: 50vh;
         width: 100vw;
     }
-    .phone-text-center{
+
+    .phone-text-center {
         text-align: center;
     }
-    .phone-padding-30{
+
+    .phone-padding-30 {
         padding: 30px;
     }
 
@@ -7568,7 +7582,7 @@ textarea.form-input {
 /* 2.4. Athul- Updates
    ========================================================================== */
 
-   .bg-image-1 {
+.bg-image-1 {
     background-image: url("../assets/images/app/ic_right_graphic.png");
     background-repeat: no-repeat;
     background-size: auto;

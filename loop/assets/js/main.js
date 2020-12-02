@@ -209,11 +209,15 @@ $(function () {
 
             var carouselSwiperBg = new Swiper(".js-carousel-slider-bg", {
                 speed: 1300,
+                slidesPerView: 1,
+                spaceBetween: 500,
                 parallax: true
             });
 
             var carouselSwiper = new Swiper('.js-carousel-slider', {
                 speed: 1300,
+                slidesPerView: 1,
+                spaceBetween: 500,
                 mousewheel: {
                     sensitivity: 1
                 },
@@ -605,6 +609,19 @@ $(function () {
         delayBeforeStart: 0,
         //'left' or 'right'
         direction: 'left',
+        //true or false - should the marquee be duplicated to show an effect of continues flow
+        duplicated: true
+    });
+    
+    $('.ar-marquee').marquee({
+        //duration in milliseconds of the marquee
+        duration: 15000,
+        //gap in pixels between the tickers
+        gap: 0,
+        //time in milliseconds before the marquee will start animating
+        delayBeforeStart: 0,
+        //'left' or 'right'
+        direction: 'right',
         //true or false - should the marquee be duplicated to show an effect of continues flow
         duplicated: true
     });
