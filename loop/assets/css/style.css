@@ -4121,7 +4121,7 @@ button.mfp-close {
 .border-btn__inner:after {
     content: '';
     position: absolute;
-    background-color: #02b5df;
+    background-color: #fff;
     opacity: .2;
     transition: .5s cubic-bezier(.17, .85, .438, .99);
 }
@@ -7325,6 +7325,9 @@ textarea.form-input {
         margin-left: 10vw;
         text-align: center;
     }
+    .phone-ml-17{
+        margin-left: 17vw;
+    }
 
     .headline-xxxl {
         font-size: 38px;
@@ -7520,18 +7523,26 @@ textarea.form-input {
     width: 100% !important;
 }
 
-.contact-bg,
+.about-bg,
 .do-bg {
-    background-image: url(../images/backgrounds/moving.svg);
     background-repeat: no-repeat;
     background-position: right;
 }
 
-.contact-ar-bg,
+.about-ar-bg,
 .do-ar-bg {
-    background-image: url(../images/backgrounds/moving.svg);
     background-repeat: no-repeat;
     background-position: left;
+}
+
+.about-bg,
+.about-ar-bg{
+    background-image: url(../images/backgrounds/moving.svg);
+}
+
+.do-bg,
+.do-ar-bg{
+    background-image: url(../images/backgrounds/dodont-static.svg);
 }
 
 @media only screen and (max-width: 699px) {
@@ -7557,6 +7568,10 @@ textarea.form-input {
 
     .phone-padding-30 {
         padding: 30px;
+    }
+    
+    .phone-p-b-80 {
+        padding-bottom: 80px;
     }
 
     .phone-min-100vh {
