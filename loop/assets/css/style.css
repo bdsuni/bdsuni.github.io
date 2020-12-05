@@ -6848,6 +6848,7 @@ textarea.form-input {
     position: absolute;
     left: 0;
     top: 0;
+    overflow: hidden;
 }
 
 .video-bg {
