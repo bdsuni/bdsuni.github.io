@@ -7607,6 +7607,10 @@ textarea.form-input {
     .article-container {
         display: flex;
     }
+    .list__item a{
+        width: 30px;
+        margin-left: 18px;
+    }
 }
 
 .upper-round:before {
@@ -7636,4 +7640,7 @@ textarea.form-input {
     margin-left: auto;
     margin-right: auto;
     display: block;
+}
+.social-svg{
+    max-height: 24px;
 }
