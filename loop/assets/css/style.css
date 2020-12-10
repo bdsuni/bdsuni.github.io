@@ -3639,73 +3639,58 @@ button.mfp-close {
 
 /* Carousel slider */
 .js-carousel-slider-bg {
-    /*
-    width: 364px;
-    height: 100vh;
-*/
-    margin-left: calc(50vw - 182px);
+    
+    margin-left: 25vw;
+    margin-right: 25vw;
     position: relative;
     pointer-events: none;
+    padding: 120px 0;
 }
+
 
 .js-carousel-slider-bg .swiper-slide {
     pointer-events: none;
 }
 
-/*
-.js-carousel-slider-bg:after {
-    content: '';
-    width: 364px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    background: url(../images/app/ip12.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 2;
-}
-*/
-
-/*
 .js-carousel-slider-bg:before,
 .js-carousel-slider-bg:after {
 	content: '';
-	width: 16%;
+	width: 25vw;
 	height: 100%;
 	position: absolute;
 	top: 0;
-	background-color: inherit;
+	background-color: #f5f5f5;
 	z-index: 2;
 }
 
 .js-carousel-slider-bg:before {
-	left: calc(-16% + 40px);
+	left: -25vw;
 }
 
 .js-carousel-slider-bg:after {
-	right: calc(-16% + 40px);
+	right: -25vw;
 }
-*/
 
 @media only screen and (max-width: 999px) {
 
     .js-carousel-slider-bg {
-        width: 70%;
-        margin-left: 15%;
+        width: 100vw;
+        margin-left: 0;
+        padding: auto;
     }
 
     .js-carousel-slider-bg:before,
     .js-carousel-slider-bg:after {
-        width: 20%;
+        width: 0;
+        background-color: #02b5df;
     }
 
     .js-carousel-slider-bg:before {
-        left: calc(-20% + 40px);
+        left: 0;
     }
 
     .js-carousel-slider-bg:after {
-        right: calc(-20% + 40px);
+        right: 0;
     }
 
 }
@@ -3719,7 +3704,7 @@ button.mfp-close {
 
     .js-carousel-slider-bg:before,
     .js-carousel-slider-bg:after {
-        width: 40px;
+        width: 0;
     }
 
     .js-carousel-slider-bg:before {
@@ -7643,4 +7628,11 @@ textarea.form-input {
 }
 .social-svg{
     max-height: 24px;
+}
+.steps-bg {
+    background-image: url(../images/backgrounds/footer.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100vw;
+    
 }
