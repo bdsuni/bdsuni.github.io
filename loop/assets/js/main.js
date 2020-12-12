@@ -306,6 +306,9 @@ $(function () {
                 speed: 2000,
                 spaceBetween: 40,
                 freeMode: true,
+                autoplay: {
+                    delay: 2500,
+                },
                 breakpoints: {
                     550: {
                         slidesPerView: 1.3
