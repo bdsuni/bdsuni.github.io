@@ -5686,6 +5686,8 @@ body .content-bg-dark .anim-img-reveal:before {
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     transition: 1.5s cubic-bezier(.225, 1, .316, .99);
+    box-sizing: border-box;
+    padding: 10px 0;
 }
 
 .anim-stroke-fill-white:before {
