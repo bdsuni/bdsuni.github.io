@@ -3804,7 +3804,8 @@ button.mfp-close {
 /* team/services sliders */
 .js-services-slider,
 .js-team-slider,
-.js-skills-slider {
+.js-skills-slider,
+.js-skills-slider-2 {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -6267,6 +6268,9 @@ input[type='submit']:hover {
     line-height: normal;
     color: #fff;
     background: none;
+    -moz-appearance: none; 
+	-webkit-appearance: none; 
+	appearance: none;
 }
 
 .form-input.black {

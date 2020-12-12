@@ -306,9 +306,6 @@ $(function () {
                 speed: 2000,
                 spaceBetween: 40,
                 freeMode: true,
-                autoplay: {
-                    delay: 2500,
-                },
                 breakpoints: {
                     550: {
                         slidesPerView: 1.3
@@ -324,6 +321,16 @@ $(function () {
                 }
             });
 
+             var skillsSwiper = new Swiper('.js-skills-slider-2', {
+                slidesPerView: 1,
+                speed: 2000,
+                spaceBetween: 40,
+                autoplay: {
+                    delay: 2500,
+                }
+            });
+
+            
             var servicesSwiper = new Swiper('.js-services-slider', {
                 slidesPerView: 1.2,
                 speed: 2000,
