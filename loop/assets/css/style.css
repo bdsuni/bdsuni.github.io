@@ -2848,6 +2848,7 @@ body.js-page-in-anim-active.js-page-out .pointer {
 
 .footer-bg {
     background-image: url(../images/backgrounds/footer.svg);
+	background-size: cover;
 }
 
 .footer-nav-btn {
