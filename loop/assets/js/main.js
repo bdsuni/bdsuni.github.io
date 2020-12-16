@@ -487,25 +487,9 @@ $(function () {
     });
 
     /* 9. Magnific popup */
-    $('.js-photo-popup').magnificPopup({
-        type: 'image',
-        mainClass: 'mfp-fade', // this class is for CSS animation below
-        gallery: {
-            // options for gallery
-            enabled: true
-        },
-        removalDelay: 1000,
-        autoFocusLast: false,
-        preloader: false
-    });
-
-    $('.js-popup-youtube').magnificPopup({
-        disableOn: 700,
-        type: 'iframe',
-        mainClass: 'mfp-fade',
-        removalDelay: 1000,
-        autoFocusLast: false,
-        preloader: false
+	
+	$('.js-popup-ajax').magnificPopup({
+        type: 'ajax'        
     });
 
     /* 10. Touch, no touch */
@@ -734,3 +718,20 @@ $(function () {
     });
 
 });
+
+
+
+(function($) {
+    $(window).load(function () {
+        // retrieved this line of code from http://dimsemenov.com/plugins/magnific-popup/documentation.html#api
+        $.magnificPopup.open({
+            items: {
+                src: '#popup'
+            },
+            type: 'inline'
+
+          // You may add options here, they're exactly the same as for $.fn.magnificPopup call
+          // Note that some settings that rely on click event (like disableOn or midClick) will not work here
+        }, 0);
+    });
+})(jQuery);

@@ -2974,7 +2974,7 @@ body.js-page-in-anim-active.js-page-out .pointer {
 
 button.mfp-close {
     position: absolute;
-    top: 40px;
+    top: -25px;
     right: 0;
     background-color: rgba(17, 21, 23, .5);
 }
