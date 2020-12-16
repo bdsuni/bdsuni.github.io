@@ -606,6 +606,81 @@ $(function () {
         }
         return false;
     });
+	
+	
+	/* 11B.	Platform form */
+	 $("#plat_form").on('submit', function () {
+        var username = $("#user_name").val().trim();
+        var email = $("#email").val().trim();
+        var phone = $("#phone").val().trim();
+        var location = $("#location").val().trim();
+        var country = $("#country").val().trim();
+        var fleet_size = $("#fleet_size").val().trim();
+        var message = $("#message").val().trim();
+
+        const data = {
+            'userName': username,
+            'email': email,
+            'phone': phone,
+            'location': location,
+            'country': country,
+            'fleet_size': fleet_size,
+            'query': message,
+        }
+
+        function submitFeedback(data) {
+            $.ajax({
+                url: 'https://api.loop.qa/user/platform',
+                type: 'POST',
+                cache: false,
+                data: data,
+                dataType: 'html',
+                beforeSend: function () {
+                    $("#send").addClass("js-active");
+                },
+                success: function (datax) {
+                    console.log(datax);
+                    if (datax || datax.statusCode === 200) {
+                        $("#m_sent").addClass("js-active");
+                        $(".form-box").addClass("js-active");
+                        setTimeout(function () {
+                            $("#send").removeClass("js-active");
+                            $("#send_form").trigger("reset");
+                            $('.email-label').removeClass("js-active");
+                        }, 2000);
+                    } else {
+                        $("#m_err").addClass("js-active");
+                        $(".form-box").addClass("js-active");
+                        setTimeout(function () {
+                            $("#send").removeClass("js-active");
+                        }, 2000);
+
+                    }
+                    $('.js-popup-close').click(function () {
+                        $(this).parents('.js-popup-fade').removeClass("js-active");
+                        $('.form-box').removeClass("js-active");
+                        return false;
+                    });
+
+                    $(document).keydown(function (e) {
+                        if (e.keyCode === 27) {
+                            e.stopPropagation();
+                            $('.js-popup-fade').removeClass("js-active");
+                            $('.form-box').removeClass("js-active");
+                        }
+                    });
+
+                    $('.js-popup-fade').click(function (e) {
+                        if ($(e.target).closest('.js-popup').length == 0) {
+                            $('.js-popup-fade').removeClass("js-active");
+                            $('.form-box').removeClass("js-active");
+                        }
+                    });
+                },
+            })
+        }
+        return false;
+    });
 
     $('#email').on('keyup', function () {
         var $this = $(this),
