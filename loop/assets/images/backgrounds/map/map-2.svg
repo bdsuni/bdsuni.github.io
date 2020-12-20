@@ -28,7 +28,7 @@
             </image>
         </g>
     </g>
-    <text transform="matrix(1 0 0 1 565.2863 447.8967)" class="map-label" id="label1">Al Bayt</text>
+    <text transform="matrix(1 0 0 1 565.2863 447.8967)" class="map-label" id="label1">Al Bayt Stadium</text>
     <text transform="matrix(1 0 0 1 493.6578 918.3035)" class="map-label" id="label2">Al Corniche</text>
     <text transform="matrix(1 0 0 1 615.7476 823.4017)" class="map-label" id="label3">Westbay</text>
     <text transform="matrix(1 0 0 1 578.1813 740.8463)" class="map-label" id="label4">Legatifiya</text>
