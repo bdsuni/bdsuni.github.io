@@ -155,7 +155,7 @@
 						<span class="nav-btn__inner" data-text="Platform">Platform</span>
 					</a>
 					<div class="nav-bg-box">
-						<div class="nav-bg" style="background-image: url(assets/images/backgrounds/platform.jpg); background-position: center right;"></div>
+						<div class="nav-bg" style="background-image: url(assets/images/backgrounds/platform_bg.png); background-position: center right;"></div>
 					</div>
 				</li><!-- nav-btn-box end -->
 			</ul><!-- menu-box end -->
@@ -1248,6 +1248,21 @@
 				"buttonIcon": "bubble2"
 			});
 		};
+
+		(function($) {
+			$(window).load(function() {
+				// retrieved this line of code from http://dimsemenov.com/plugins/magnific-popup/documentation.html#api
+				$.magnificPopup.open({
+					items: {
+						src: '#popup'
+					},
+					type: 'inline'
+
+					// You may add options here, they're exactly the same as for $.fn.magnificPopup call
+					// Note that some settings that rely on click event (like disableOn or midClick) will not work here
+				}, 0);
+			});
+		})(jQuery);
 
 	</script>
 	<script async src='https://support.loopmobility.co/app/Modules/Ticket/Channels/HelpWidget/Views/js/supportpal.min.js?v=3.2.1'></script>
