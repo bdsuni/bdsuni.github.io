@@ -720,5 +720,9 @@ $(function () {
 		});
 
 	});
-
+	$(".reload").click(function () {
+		setTimeout(function () {
+			location.reload();
+		},800);
+	});
 });
